@@ -1,0 +1,150 @@
+// ============ colors ============
+
+$primary: #74a6ff;
+$primary-light: #d4e3ff;
+$primary-dark: #5276b5;
+
+$secondary: #aaa4e8;
+$secondary-light: #f1f0fb;
+$secondary-dark: #756ada;
+
+$tertiary: #f2b890;
+$tertiary-light: #fbe9dd;
+$tertiary-dark: #ac8366;
+
+$success-1: #34c597;
+$success-2: #cef1e6;
+
+$warning-1: #fdda43;
+$warning-2: #fff6d2;
+
+$danger-1: #fd615b;
+$danger-2: #ffd9d8;
+
+$white: #fff;
+$black: #000;
+
+$grey-50: #bbbac5;
+$grey-100: #8e8c9e;
+$grey-200: #615f78;
+
+$darkBlue-1: #1d1a3e;
+$darkBlue-2: #2f305d;
+$darkBlue-3: #222453;
+
+$custom-colors: (
+  'primary': $primary,
+  'primary-light': $primary-light,
+  'primary-dark': $primary-dark,
+  'secondary': $secondary,
+  'secondary-light': $secondary-light,
+  'secondary-dark': $secondary-dark,
+  'tertiary': $tertiary,
+  'tertiary-light': $tertiary-light,
+  'tertiary-dark': $tertiary-dark,
+  'success-1': $success-1,
+  'success-2': $success-2,
+  'warning-1': $warning-1,
+  'warning-2': $warning-2,
+  'danger-1': $danger-1,
+  'danger-2': $danger-2,
+  'white': $white,
+  'black': $black,
+  'grey-50': $grey-50,
+  'grey-100': $grey-100,
+  'grey-200': $grey-200,
+  'darkBlue-1': $darkBlue-1,
+  'darkBlue-2': $darkBlue-2,
+  'darkBlue-3': $darkBlue-3,
+) !default;
+
+// ============ #colors ============
+
+// ============ Typography ============
+
+$line-height-base: 1.4 !default;
+
+// ------ font-size ------
+$font-size-base: 1rem !default;
+
+$font-sizes: (
+  h1: $font-size-base * 2.5,
+  // 40px
+  h2: $font-size-base * 2,
+  // 32px
+  h3: $font-size-base * 1.75,
+  // 28px
+  h4: $font-size-base * 1.5,
+  // 24px
+  h5: $font-size-base * 1.125,
+  // 18px
+  base: $font-size-base,
+  // 16px
+  sm: $font-size-base * 0.875,
+  // 14px
+  xs: $font-size-base * 0.75,
+  //  12px
+  xxs: $font-size-base * 0.625,
+  //  10px
+) !default;
+// ------ #font-size ------
+
+// ------ $headings ------
+
+$headings-font-weight: 700 !default;
+$headings-line-height: 1.25 !default;
+
+// ------ #$headings ------
+
+// ============ Spacing ============
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  // 4px
+  1\.5: $spacer * 0.375,
+  // 6px
+  2: $spacer * 0.5,
+  // 8px
+  2\.5: $spacer * 0.625,
+  // 10px
+  3: $spacer * 0.75,
+  // 12px
+  4: $spacer * 1,
+  // 16px
+  5: $spacer * 1.25,
+  // 20px
+  6: $spacer * 1.5,
+  // 24px
+  7\.5: $spacer * 1.875,
+  // 30px
+  8: $spacer * 2,
+  // 32px
+  9: $spacer * 2.25,
+  // 36px
+  10: $spacer * 2.5,
+  // 40px
+  12: $spacer * 3,
+  // 48px
+  12\.5: $spacer * 3.125,
+  // 50px
+  13: $spacer * 3.25,
+  // 52px
+  15: $spacer * 3.75,
+  // 60px
+  18: $spacer * 4.5,
+  // 72px
+  20: $spacer * 5,
+  // 80px
+  25: $spacer * 6.25,
+  // 100px
+  30: $spacer * 7.5,
+  // 120px
+  33: $spacer * 8.25,
+  // 132px
+  40: $spacer * 10,
+  // 160px
+  50: $spacer * 12.5,
+  // 200px
+) !default;

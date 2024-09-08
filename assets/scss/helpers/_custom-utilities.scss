@@ -1,0 +1,13 @@
+// ============ gradient-bg============
+.bg-gradient-secondary {
+  @include gradient-y(#c0baee, #756ada);
+}
+.bg-gradient-primary {
+  @include gradient-y(#bfd6ff, #5276b5);
+}
+.bg-gradient-darkBlue {
+  background: linear-gradient(181.15deg, #1d1a3e 0.98%, #222453 69.24%);
+}
+.bg-gradient-tertiary {
+  @include gradient-y(#8f85ab, #74a6ff);
+}
