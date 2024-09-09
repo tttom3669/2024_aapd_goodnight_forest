@@ -148,3 +148,20 @@ $spacers: (
   50: $spacer * 12.5,
   // 200px
 ) !default;
+
+$rounded-values: (
+  null: 1rem,
+  // 16px
+  0: 0,
+  circle: 50%,
+  pill: 50rem,
+  // 800px
+  sm: 1.5rem,
+  // 24px
+  md: 2.5rem,
+  // 40px,
+  lg: 4rem,
+  // 64px
+  xl: 6.25rem,
+  // 100px
+) !default;
