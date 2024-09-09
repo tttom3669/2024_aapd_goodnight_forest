@@ -1,4 +1,10 @@
-// .footer{
-//   background: #69F0AE;
-//   font-size: 64px;
-// }
+.footer {
+  display: flex;
+  justify-content: center;
+  &__bar {
+    background-color: $white;
+    width: 139px;
+    height: 5px;
+    border-radius: 100px;
+  }
+}

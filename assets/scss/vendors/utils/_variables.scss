@@ -440,7 +440,8 @@ $position-values: (
 
 $body-text-align: null !default;
 $body-color: $gray-900 !default;
-$body-bg: $white !default;
+// $body-bg: $white !default;
+$body-bg: $darkBlue-1 !default; // cus*
 
 $body-secondary-color: rgba($body-color, 0.75) !default;
 $body-secondary-bg: $gray-200 !default;
