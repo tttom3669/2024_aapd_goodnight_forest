@@ -919,8 +919,33 @@ $utilities: map-merge(
         property: z-index,
         class: z,
         values: $zindex-levels,
-      )
-      // scss-docs-end utils-zindex
+      ),
+    // scss-docs-end utils-zindex
+    // scss-docs-end utils-visibility
+    // cus*
+    'bg-repeat':
+      (
+        property: background-repeat,
+        class: bg,
+        values: (
+          no-repeat: no-repeat,
+        ),
+      ),
+    'bg-size': (
+      property: background-size,
+      class: bg,
+      values: (
+        cover: cover,
+        contain: contain,
+      ),
+    ),
+    'bg-position': (
+      property: background-position,
+      class: bg,
+      values: (
+        center: center,
+      ),
+    )
   ),
   $utilities
 );

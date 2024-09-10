@@ -1,3 +1,6 @@
-// .index-title {
-//   font-size: 100px;
-// }
+.index {
+  &__bg {
+    background-position: 78% 50%;
+    height: 100dvh;
+  }
+}
