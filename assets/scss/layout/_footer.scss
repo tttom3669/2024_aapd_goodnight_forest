@@ -1,10 +1,19 @@
+$footer-height: 21px;
 .footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
+  height: 21px;
   &__bar {
     background-color: $white;
     width: 139px;
     height: 5px;
     border-radius: 100px;
+  }
+  &__container {
+    padding-bottom: 21px;
   }
 }
