@@ -1,4 +1,27 @@
-// .header{
-//   background: #69F0AE;
-//   font-size: 64px;
-// }
+$header-height: 54px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: $header-height;
+  width: 100vw;
+  justify-content: space-between;
+  padding-left: 48.55px;
+  padding-right: 28.74px;
+  background-color: $darkBlue-1;
+  &__time {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-top: 18.34px;
+  }
+  &__status-bar {
+    display: flex;
+    padding-top: 23px;
+    gap: 7.5px;
+  }
+  &__container {
+    padding-top: $header-height;
+  }
+}
