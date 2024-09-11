@@ -7,6 +7,7 @@ $footer-height: 21px;
   display: flex;
   justify-content: center;
   height: 21px;
+  z-index: 100;
   &__bar {
     background-color: $white;
     width: 139px;
