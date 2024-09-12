@@ -9,7 +9,7 @@
 
 .index {
   &__bg {
-    height: 100dvh;
+    min-height: 100dvh;
     position: relative;
     &::after {
       position: absolute;
