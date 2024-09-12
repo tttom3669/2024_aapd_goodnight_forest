@@ -37,13 +37,15 @@
     color: rgba($color: $secondary-light, $alpha: 0.5);
     margin-top: 8px;
   }
+  &:first-child a {
+    padding: 0 16px;
+  }
 }
 
 .nav_bar_choose {
   position: relative;
   a {
     align-content: space-between;
-    padding: 0 16px;
   }
   .nav-icon_block {
     display: flex;
