@@ -586,10 +586,10 @@ $utilities: map-merge(
         ),
       ),
     'font-size': (
-      rfs: true,
+      // rfs: true, //cus*
       property: font-size,
       class: fs,
-      values: $font-sizes,
+      values: $font-sizes
     ),
     'font-style': (
       property: font-style,
