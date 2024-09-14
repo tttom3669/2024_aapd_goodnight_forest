@@ -26,19 +26,19 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  object-fit: cover; 
-  transform: rotate(-90deg); 
+  object-fit: cover; // 保持圖片填充
+  transform: rotate(-90deg); //逆時針旋轉 90 度
   z-index: 2; 
-  overflow: hidden; 
+  overflow: hidden; // 其他隱藏
 }
 .user-circle {
   position: absolute;
   top: 20%;
   left: 5%;
-  width: 200%;
-  height: 200%;  
-  transform: translate(-50%, -50%); 
-  object-fit: cover; 
+  width: 200%; //放大2000%
+  height: 200%; // 放大200% 
+  transform: translate(-50%, -50%); // 保持圖片居中 
+  object-fit: cover; // 保持圖片填充 
 }
 .reserve-relative {
   position: relative;
@@ -50,13 +50,14 @@
   height: 7px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top:25%;
+  right: 20%;
 }
 .clock-pabsolute {
   position: absolute;
   top:25%;
   right: 20%;
-
-
 }
 .button-set {
   background: rgba(255, 255, 255, 0.1);
