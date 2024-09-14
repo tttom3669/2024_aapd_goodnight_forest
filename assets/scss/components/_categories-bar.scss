@@ -1,0 +1,52 @@
+.categories-bar {
+  &__item {
+    flex: 0 0 auto;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: $darkBlue-3;
+    border: 1px solid transparent;
+    svg {
+      width: 36px;
+      height: 36px;
+      opacity: 0.5;
+      path {
+        stroke: $primary-light;
+        &[fill] {
+          fill: $primary-light;
+        }
+      }
+    }
+    &,
+    path {
+      transition: all 0.3s;
+    }
+    &:hover {
+      svg {
+        filter: drop-shadow(
+          0px 0px 24px #d6d0f5cc
+        ); /* 使用 drop-shadow 來讓 icon 周圍發光 */
+        opacity: 1;
+        path {
+          stroke: $primary-light;
+          &[fill] {
+            fill: $primary-light;
+          }
+        }
+      }
+      border: 1px solid var(--Primary-light, #d4e3ff);
+    }
+  }
+  &__container {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
