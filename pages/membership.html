@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>會員頁面</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+  <section class="bg-member-top">
+    <div class="container">
+      <div class="d-flex justify-content-center flex-column align-items-center py-8">
+        <div class="bg-member"></div>
+        <div class="user mb-4"> 
+          <img class="user-circle" src="/assets/images/member_user.png" alt=""> 
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <h5 class="me-1 fs-h5 fw-bold lh-sm text-white">Simon</h5>
+          <a href="#">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24"><path clip-rule="evenodd" d="m9.3764 20.028 8.7864-11.36244c.4775-.61273.6473-1.32114.4881-2.04245-.1379-.65573-.5412-1.27922-1.146-1.7522l-1.475-1.17172c-1.284-1.02123-2.8758-.91373-3.7884.25799l-.9869 1.28029c-.1273.16017-.0955.39667.0637.52566 0 0 2.4937 1.99945 2.5468 2.04245.1698.16125.2971.37624.329.63424.053.50523-.2972.97822-.8171 1.04272-.2441.03225-.4776-.043-.6473-.18275l-2.6211-2.08544c-.12734-.09568-.31835-.07525-.42447.05375l-6.22899 8.0623c-.40324.5052-.54119 1.161-.40324 1.7952l.79587 3.4507c.04244.1827.20162.3117.39262.3117l3.50183-.043c.63669-.0107 1.23094-.301 1.63418-.817zm4.9033-1.0746h5.7101c.5571 0 1.0102.459 1.0102 1.0233 0 .5655-.4531 1.0234-1.0102 1.0234h-5.7101c-.5571 0-1.0102-.4579-1.0102-1.0234 0-.5643.4531-1.0233 1.0102-1.0233z" fill="#FFFFFF" fill-rule="evenodd"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <ul class="d-flex justify-content-center align-items-center a">
+      <li class="py-4 button-set d-flex justify-content-center align-items-center me-4">
+        <a href="#">
+          <span class="me-2 reserve-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24">
+              <g fill="#FFFFFF">
+                <path d="m16.7502 3.56v-1.56c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.5h-6.49997v-1.5c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.56c-2.7.25-4.01 1.86-4.21 4.25-.02.29.22.53.5.53h16.91997c.29 0 .53-.25.5-.53-.2-2.39-1.51-4-4.21-4.25z"/>
+                <path d="m20 9.83984h-16c-.55 0-1 .44996-1 .99996v6.16c0 3 1.5 5 5 5h8c3.5 0 5-2 5-5v-6.16c0-.55-.45-.99996-1-.99996zm-10.79 8.36996c-.05.04-.1.09-.15.12-.06.04-.12.07-.18.09-.06.03-.12.05-.18.06-.07.01-.13.02-.2.02-.13 0-.26-.03-.38-.08-.13-.05-.23-.12-.33-.21-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.1-.09.2-.16.33-.21.18-.08.38-.1.58-.06.06.01.12.03.18.06.06.02.12.05.18.09.05.04.1.08.15.12.18.19.29.45.29.71s-.11.52-.29.71zm0-3.5c-.19.18-.45.29-.71.29s-.52-.11-.71-.29c-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.28-.28.72-.37 1.09-.21.13.05.24.12.33.21.18.19.29.45.29.71s-.11.52-.29.71zm3.5 " stroke="#FFFFFF1A"/>
+              </g>
+            </svg>
+            <span class="clock-pabsolute">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="11" viewBox="0 0 24 24" width="11"><g stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m22 12c0 5.52-4.48 10-10 10s-10-4.48-10-10 4.48-10 10-10 10 4.48 10 10z" fill="#FFFFFF"/><path d="m15.71 15.18-3.1-1.85c-.54-.32-.98-1.09-.98-1.72v-4.09999"/></g></svg>
+            </span>
+            <span class="right-circle position-absolute top-4/1 start-3/1 translate-middle"></span>
+          </span>
+          <span class="fs-sm text-white fw-medium lh-sm">我的預約</span>
+        </a>
+      </li>
+      <li class="py-4 button-set d-flex justify-content-center align-items-center">
+        <a href="#">
+          <span class="me-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24"><path d="m16.44 3.10156c-1.81 0-3.43.88-4.44 2.23-1.01-1.35-2.63-2.23-4.44-2.23-3.07 0-5.56 2.5-5.56 5.59 0 1.19.19 2.29004.52 3.31004 1.58 5 6.45 7.99 8.86 8.81.34.12.9.12 1.24 0 2.41-.82 7.28-3.81 8.86-8.81.33-1.02.52-2.12004.52-3.31004 0-3.09-2.49-5.59-5.56-5.59z" fill="#FFFFFF"/></svg>
+          </span>
+          <span class="fs-sm text-white fw-medium lh-sm">收藏文章</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="pt-8 pb-5">
+    <div class="container">
+      <ul>
+        <li class="mb-4">
+          <h6 class="fs-base text-white lh-5 mb-3">個人資訊</h6>
+          <div class="btn dropend button-set-top d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              帳號與安全
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+          <div class="btn dropend button-set-bottom d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              隱私設定
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </li>
+        <li class="mb-4">
+          <h6 class="fs-base text-white lh-5 mb-3">通知設置</h6>
+          <div class="btn dropend button-set-top d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              通知設定
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+          <div class="btn dropend button-set-bottom d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              設定鬧鐘與提醒
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </li>
+        <li class="mb-4">
+          <h6 class="fs-base text-white lh-5 mb-3">資料和隱私</h6>
+          <div class="btn dropend button-set-top d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              資料同步與備份
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+          <div class="btn dropend button-set-bottom d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              第三方應用授權
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </li>
+        <li>
+          <h6 class="fs-base text-white lh-5 mb-3">訂閱與付款</h6>
+          <div class="btn dropend button-set-top d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              訂閱購買
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+          <div class="btn dropend button-set-bottom d-flex justify-content-between align-items-center">
+            <button type="button" class="btn dropdown-toggle text-white fs-sm fw-medium lh-sm" data-bs-toggle="dropdown" aria-expanded="false">
+              付款信息
+            </button>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <%- include('./layout/main_navbar.ejs',{ active: 'profile' })%>
+  <%- include('./layout/footer'); -%>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>
