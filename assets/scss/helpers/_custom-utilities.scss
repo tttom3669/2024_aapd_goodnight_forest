@@ -11,3 +11,11 @@
 .bg-gradient-tertiary {
   @include gradient-y(#8f85ab, #74a6ff);
 }
+
+.bg-gradient- {
+  background: linear-gradient(
+    90.82deg,
+    rgba(255, 255, 255, 0) -12.49%,
+    rgba(52, 69, 119, 0.63) 113%
+  );
+}

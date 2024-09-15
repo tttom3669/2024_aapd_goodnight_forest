@@ -1,0 +1,54 @@
+@import './index';
+
+.progress-bg {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+}
+.progress-bar {
+  width: 214px;
+  height: 214px;
+  border-radius: 50%;
+  background: rgba(255, 217, 216, 1);
+  background-image: linear-gradient(
+    to left,
+    transparent 50%,
+    rgba(253, 97, 91, 1) 0%
+  );
+}
+.progress-bar::before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0/50%;
+  background-color: inherit;
+  transform-origin: left;
+  transform: rotate(-120deg);
+}
+.progress-bar-line {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  background: rgba(187, 186, 197, 1);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 23%;
+  left: 33%;
+};
+.clock-lh-text {
+  line-height: 1.4;
+}
+.vertical-line {
+  margin-right: 12px;
+  margin-left: 12px;
+  height: 31px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.chart-bg {
+  padding-top: 63px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}

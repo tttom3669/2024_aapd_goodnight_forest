@@ -1,0 +1,104 @@
+.set-clock {
+  margin-top: 64px;
+  margin-bottom: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .clock-time {
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: bold;
+    color: $white;
+  }
+  .set-clock-item {
+    padding: 10px 24px;
+    border-radius: 40px;
+    background: $grey-100;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.set-clock-close {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .set-clock-btn {
+    padding: 12px 27.5px;
+    border-radius: 40px;
+    background: $primary;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.sleep-standby-bg {
+  width: 100%;
+  background-image: linear-gradient(
+    360deg,
+    #1D1A3E 5.17%,
+    rgba(29, 26, 62, 0.73) 12.88%,
+    rgba(29, 26, 62, 0.41) 22.54%,
+    rgba(29, 26, 62, 0) 32.2%
+  ),
+  url('/assets/images/sleep-standby-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.alarm-clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  margin-bottom: 0;
+}
+.alarm-clock-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.alarm-clock-item {
+  width: 156px;
+  height: 156px;
+  background-image: url('/assets/images/sleep-partner-card-back.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 16px;
+  position: relative;
+  object-fit: cover;
+  .alarm-clock-title {
+    height: 156px;
+    width: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    .alarm-clock-text {
+      font-size: 16px;
+      font-weight: medium;
+      line-height: 1.25;
+      color: $white;
+      text-align: center;
+      padding: 7.88px 0px;
+      border-radius: 0px 0px 16px 16px;
+      background:rgba(29, 26, 62, 0.4);
+      backdrop-filter: blur(10px);
+    }
+  }
+  .play-stop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
