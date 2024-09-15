@@ -69,6 +69,39 @@
       height: auto;
       aspect-ratio: 1/1;
       background-color: $darkBlue-3;
+      opacity: 0.4;
+      background-repeat: no-repeat;
+      transition: opacity 0.3s;
+      border: 1px solid transparent;
+      &--1 {
+        background-position: -39.971px -37.879px;
+        background-size: 158.267% 158.267%;
+      }
+      &--2 {
+        background-position: -14.819px -18.992px;
+        background-size: 170.156% 170.156%;
+      }
+      &--3 {
+        background-position: 50%;
+        background-size: cover;
+      }
+      &--4 {
+        background-position: -3.523px -77.84px;
+        background-size: 213.211% 213.211%;
+      }
+      &--5 {
+        background-position: -10.141px -49.829px;
+        background-size: 178.182% 178.182%;
+      }
+      &.active,
+      &:hover {
+        border-radius: 16px;
+        border: 1px solid $white;
+        opacity: 1;
+        filter: drop-shadow(
+          0px 0px 10px rgba(255, 255, 255, 0.8)
+        ); /* 使用 drop-shadow 來讓 icon 周圍發光 */
+      }
     }
   }
 }
