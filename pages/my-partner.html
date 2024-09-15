@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main>
+      <div class="my-partner__bg mb-6">
+        <%- include('./layout/return_navbar',{ lastPage: './sleep-partner.html' ,title: '' ,iconType : '' ,iconLink:'#'
+          }); -%>
+          <div class="position-relative container z-1 mt-auto">
+            <div class="d-flex flex-column  px-8 text-white">
+              <div class="d-flex flex-column gap-3 align-items-start mb-2">
+                <h3 class="fs-h4 fw-bold">星蘑蘑夜曲</h3>
+                <div class="d-flex align-items-center gap-2">
+                  <p class="py-1 px-3 bg-white rounded-sm fs-xs fw-medium" style="--bs-bg-opacity: 0.4;">呼吸夥伴</p>
+                  <p class="fs-xs">10分鐘</p>
+                </div>
+              </div>
+
+              <p class="fs-xs mb-4">星蘑蘑在帶領呼吸法時，傘狀部分會隨呼吸節奏收縮擴張，以這樣的方式幫助大家放鬆，進入甜美夢鄉。</p>
+              <a href="./sleep-partner-single.html"
+                class="btn btn-primary w-100 py-3 fw-bold text-darkBlue-1 rounded-md mb-2">開始</a>
+            </div>
+          </div>
+      </div>
+
+      <ul class="nav my-partner__nav mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-all" data-bs-toggle="pill" data-bs-target="#content-all" type="button"
+            role="tab" aria-controls="pills-home" aria-selected="true">全部夥伴</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-meditation" data-bs-toggle="pill" data-bs-target="#content-meditation"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">冥想夥伴</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-breathe" data-bs-toggle="pill" data-bs-target="#content-breathe"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">呼吸夥伴</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-story" data-bs-toggle="pill" data-bs-target="#content-story" type="button"
+            role="tab" aria-controls="pills-contact" aria-selected="false">故事夥伴</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-music" data-bs-toggle="pill" data-bs-target="#content-music" type="button"
+            role="tab" aria-controls="pills-contact" aria-selected="false">音樂夥伴</button>
+        </li>
+      </ul>
+
+      <g filter="url(#filter0_d_17943_2025)">
+        <path
+          d="M0 25C0 11.7452 10.7452 1 24 1H351C364.255 1 375 11.7452 375 25V292C375 305.255 364.255 316 351 316H24C10.7452 316 0 305.255 0 292V25Z"
+          fill="#1D1A3E" />
+      </g>
+      <defs>
+        <filter id="filter0_d_17943_2025" x="0" y="0" width="375" height="316" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha" />
+          <feOffset dy="-1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17943_2025" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17943_2025" result="shape" />
+        </filter>
+      </defs>
+      </svg> -->
+      <div class="tab-content my-partner__tab-content text-white" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="content-all" role="tabpanel" aria-labelledby="tab-all" tabindex="0">
+          <div class="container">
+            <div class="px-2">
+              <div class="row gx-3 row-gap-6">
+                <div class="col-3">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--1"
+                    style="background-image: url(/assets/images/sleep-partner-card-back.png);">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--2"
+                    style="background-image: url(/assets/images/myPartner-item-3.png);">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--3 active"
+                    style="background-image: url(/assets/images/myPartner-item-1.png);">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--4"
+                    style="background-image: url(/assets/images/myPartner-item-2.png);">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--5"
+                    style="background-image: url(/assets/images/myPartner-item-4.png);">
+                    &nbsp;
+                  </div>
+                </div>
+                <% for(let i=0; i<7; i++ ) {%>
+                  <div class="col-3">
+                    <div class="my-partner__tab-content-item pe-none">
+                      &nbsp;
+                    </div>
+                  </div>
+                  <% }%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="content-meditation" role="tabpanel" aria-labelledby="tab-meditation"
+          tabindex="0">
+          <div class="container">
+            <div class="px-2">
+              <div class="row gx-3 row-gap-6">
+                <% for(let i=0; i<12; i++ ) {%>
+                  <div class="col-3">
+                    <div class="my-partner__tab-content-item pe-none">
+                      &nbsp;
+                    </div>
+                  </div>
+                  <% }%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="content-breathe" role="tabpanel" aria-labelledby="tab-breathe" tabindex="0">
+          <div class="container">
+            <div class="px-2">
+              <div class="row gx-3 row-gap-6">
+                <% for(let i=0; i<12; i++ ) {%>
+                  <div class="col-3">
+                    <div class="my-partner__tab-content-item pe-none">
+                      &nbsp;
+                    </div>
+                  </div>
+                  <% }%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="content-story" role="tabpanel" aria-labelledby="tab-story" tabindex="0">
+          <div class="container">
+            <div class="px-2">
+              <div class="row gx-3 row-gap-6">
+                <% for(let i=0; i<12; i++ ) {%>
+                  <div class="col-3">
+                    <div class="my-partner__tab-content-item pe-none">
+                      &nbsp;
+                    </div>
+                  </div>
+                  <% }%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="content-music" role="tabpanel" aria-labelledby="tab-music" tabindex="0">
+          <div class="container">
+            <div class="px-2">
+              <div class="row gx-3 row-gap-6">
+                <% for(let i=0; i<12; i++ ) {%>
+                  <div class="col-3">
+                    <div class="my-partner__tab-content-item pe-none">
+                      &nbsp;
+                    </div>
+                  </div>
+                  <% }%>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
