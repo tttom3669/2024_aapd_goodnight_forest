@@ -11,7 +11,7 @@
 <body>
   <%- include('./layout/header'); -%>
     <main class="site-main sleep-partner__bg">
-      <%- include('./layout/return_navbar'); -%>
+      <%- include('./layout/return_navbar',{ lastPage: './index.html' ,title: '助眠夥伴' ,iconType : 'default' }); -%>
         <div class="conntainer mt-6">
           <div class="px-3">
             <div class="sleep-partner__card-container">
@@ -30,8 +30,8 @@
                       <p class="fs-xs">35分鐘</p>
                     </div>
                     <p class="fs-xs mb-4">露米娜是一位引導冥想的獨角獸導師，用光輝與智慧帶領大家進入平靜和諧的境界</p>
-                    <button type="button"
-                      class="btn btn-primary w-100 py-3 fw-bold text-darkBlue-1 rounded-md">開始</button>
+                    <a href="./sleep-parter-single.html"
+                      class="btn btn-primary w-100 py-3 fw-bold text-darkBlue-1 rounded-md">開始</a>
                   </div>
                 </div>
               </div>

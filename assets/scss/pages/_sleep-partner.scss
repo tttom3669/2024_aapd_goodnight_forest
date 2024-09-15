@@ -124,3 +124,48 @@
     }
   }
 }
+
+.media-progress {
+  background-color: rgba($white, 0.15);
+  &,
+  &.progress-bar {
+    height: 4px;
+  }
+}
+
+.sleep-partner-single__bg {
+  background: url('/assets/images/sleep-partner-card-back.png');
+  background-size: 202.818% 100.339%;
+  background-repeat: no-repeat;
+  background-position: -344.683px -180.779px;
+  backdrop-filter: blur(44px);
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+  &::before {
+    background-image: linear-gradient(
+      180deg,
+      #1d1a3e 15.51%,
+      rgba(29, 26, 62, 0.73) 27.06%,
+      rgba(29, 26, 62, 0.41) 39.65%,
+      rgba(29, 26, 62, 0) 48.28%
+    );
+  }
+  &::after {
+    background-image: linear-gradient(
+      0deg,
+      #1d1a3e 22.24%,
+      rgba(29, 26, 62, 0.73) 26.32%,
+      rgba(29, 26, 62, 0.41) 36.24%,
+      rgba(29, 26, 62, 0) 44.39%
+    );
+  }
+}
