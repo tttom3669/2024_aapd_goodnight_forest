@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="site-main sleep-partner-single__bg  h-dvh d-flex flex-column">
+      <%- include('./layout/return_navbar',{ lastPage: './sleep-partner.html' ,title: '' ,iconType: 'list' }); -%>
+        <section>
+          <div class="container">
+            <div class="d-flex flex-column px-3">
+              <div class="text-white mt-4">
+                <h1 class=" fs-h4 fw-bold mb-3">第一章-開始冥想</h1>
+                <p class="fs-xs">
+                  您將學會放鬆身心，釋放壓力，快速進入深層睡眠。由專業導師引導，提供個性化建議，讓您享受更高品質的睡眠。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container mt-auto">
+          <div class="px-3">
+            <div class="progress media-progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 0%;"></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="d-flex align-items-center gap-1 text-white fw-bold" style="--bs-text-opacity: 0.7">
+                0<span>:</span>00</p>
+              <p class="d-flex align-items-center gap-1 text-white fw-bold" style="--bs-text-opacity: 0.7">
+                7<span>:</span>00</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mb-6">
+              <a href="javascript:;" class="p-2.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                  <path d="M4 25C4 18.3502 9.39624 13 16 13H44" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="bevel" />
+                  <path d="M38 7L44 13L38 19" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="bevel" />
+                  <path d="M44 23C44 29.6498 38.6038 35 32 35H4" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="bevel" />
+                  <path d="M10 41L4 35L10 29" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="bevel" />
+                </svg>
+              </a>
+              <div class="d-flex align-items-center gap-1 justify-content-between">
+                <a href="javascript:;" class="p-2.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <mask id="mask0_17922_1021" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                      width="25" height="24">
+                      <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_17922_1021)">
+                      <path
+                        d="M6 17V7C6 6.71667 6.09583 6.47917 6.2875 6.2875C6.47917 6.09583 6.71667 6 7 6C7.28333 6 7.52083 6.09583 7.7125 6.2875C7.90417 6.47917 8 6.71667 8 7V17C8 17.2833 7.90417 17.5208 7.7125 17.7125C7.52083 17.9042 7.28333 18 7 18C6.71667 18 6.47917 17.9042 6.2875 17.7125C6.09583 17.5208 6 17.2833 6 17ZM17.45 16.975L11.25 12.825C11.1 12.725 10.9875 12.6042 10.9125 12.4625C10.8375 12.3208 10.8 12.1667 10.8 12C10.8 11.8333 10.8375 11.6792 10.9125 11.5375C10.9875 11.3958 11.1 11.275 11.25 11.175L17.45 7.025C17.5333 6.95833 17.625 6.91667 17.725 6.9C17.825 6.88333 17.9167 6.875 18 6.875C18.2667 6.875 18.5 6.96667 18.7 7.15C18.9 7.33333 19 7.575 19 7.875V16.125C19 16.425 18.9 16.6667 18.7 16.85C18.5 17.0333 18.2667 17.125 18 17.125C17.9167 17.125 17.825 17.1167 17.725 17.1C17.625 17.0833 17.5333 17.0417 17.45 16.975Z"
+                        fill="white" />
+                    </g>
+                  </svg>
+                </a>
+
+                <button type="button" class="btn btn-white p-2.5 rounded-circle border-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                    <path
+                      d="M27.1667 31.6654C26.25 31.6654 25.4653 31.339 24.8125 30.6862C24.1597 30.0334 23.8333 29.2487 23.8333 28.332V11.6654C23.8333 10.7487 24.1597 9.96398 24.8125 9.3112C25.4653 8.65842 26.25 8.33203 27.1667 8.33203C28.0833 8.33203 28.8681 8.65842 29.5208 9.3112C30.1736 9.96398 30.5 10.7487 30.5 11.6654V28.332C30.5 29.2487 30.1736 30.0334 29.5208 30.6862C28.8681 31.339 28.0833 31.6654 27.1667 31.6654ZM13.8333 31.6654C12.9167 31.6654 12.1319 31.339 11.4792 30.6862C10.8264 30.0334 10.5 29.2487 10.5 28.332V11.6654C10.5 10.7487 10.8264 9.96398 11.4792 9.3112C12.1319 8.65842 12.9167 8.33203 13.8333 8.33203C14.75 8.33203 15.5347 8.65842 16.1875 9.3112C16.8403 9.96398 17.1667 10.7487 17.1667 11.6654V28.332C17.1667 29.2487 16.8403 30.0334 16.1875 30.6862C15.5347 31.339 14.75 31.6654 13.8333 31.6654Z"
+                      fill="#1D1A3E" />
+                  </svg>
+                </button>
+                <a href="javascript:;" class="p-2.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <mask id="mask0_17922_1030" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                      width="25" height="24">
+                      <rect x="0.5" width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_17922_1030)">
+                      <path
+                        d="M19 7L19 17C19 17.2833 18.9042 17.5208 18.7125 17.7125C18.5208 17.9042 18.2833 18 18 18C17.7167 18 17.4792 17.9042 17.2875 17.7125C17.0958 17.5208 17 17.2833 17 17L17 7C17 6.71667 17.0958 6.47917 17.2875 6.2875C17.4792 6.09583 17.7167 6 18 6C18.2833 6 18.5208 6.09583 18.7125 6.2875C18.9042 6.47917 19 6.71667 19 7ZM7.55 7.025L13.75 11.175C13.9 11.275 14.0125 11.3958 14.0875 11.5375C14.1625 11.6792 14.2 11.8333 14.2 12C14.2 12.1667 14.1625 12.3208 14.0875 12.4625C14.0125 12.6042 13.9 12.725 13.75 12.825L7.55 16.975C7.46667 17.0417 7.375 17.0833 7.275 17.1C7.175 17.1167 7.08333 17.125 7 17.125C6.73333 17.125 6.5 17.0333 6.3 16.85C6.1 16.6667 6 16.425 6 16.125L6 7.875C6 7.575 6.1 7.33333 6.3 7.15C6.5 6.96667 6.73333 6.875 7 6.875C7.08333 6.875 7.175 6.88333 7.275 6.9C7.375 6.91667 7.46667 6.95833 7.55 7.025Z"
+                        fill="white" />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <a href="javascript:;" class="p-2.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.75 2.25C14.1642 2.25 14.5 2.58579 14.5 3V5V7C14.5 7.41421 14.1642 7.75 13.75 7.75C13.3358 7.75 13 7.41421 13 7V5.75H2.75C2.33579 5.75 2 5.41421 2 5C2 4.58579 2.33579 4.25 2.75 4.25H13V3C13 2.58579 13.3358 2.25 13.75 2.25ZM17 5C17 4.58579 17.3358 4.25 17.75 4.25H20.75C21.1642 4.25 21.5 4.58579 21.5 5C21.5 5.41421 21.1642 5.75 20.75 5.75H17.75C17.3358 5.75 17 5.41421 17 5ZM2 12C2 11.5858 2.33579 11.25 2.75 11.25H6.75C7.16421 11.25 7.5 11.5858 7.5 12C7.5 12.4142 7.16421 12.75 6.75 12.75H2.75C2.33579 12.75 2 12.4142 2 12ZM11.5 10C11.5 9.58579 11.1642 9.25 10.75 9.25C10.3358 9.25 10 9.58579 10 10V12V14C10 14.4142 10.3358 14.75 10.75 14.75C11.1642 14.75 11.5 14.4142 11.5 14V12.75H21.75C22.1642 12.75 22.5 12.4142 22.5 12C22.5 11.5858 22.1642 11.25 21.75 11.25H11.5V10ZM17.75 18.25C17.3358 18.25 17 18.5858 17 19C17 19.4142 17.3358 19.75 17.75 19.75H20.75C21.1642 19.75 21.5 19.4142 21.5 19C21.5 18.5858 21.1642 18.25 20.75 18.25H17.75ZM13.75 16.25C14.1642 16.25 14.5 16.5858 14.5 17V19V21C14.5 21.4142 14.1642 21.75 13.75 21.75C13.3358 21.75 13 21.4142 13 21V19.75H2.75C2.33579 19.75 2 19.4142 2 19C2 18.5858 2.33579 18.25 2.75 18.25H13V17C13 16.5858 13.3358 16.25 13.75 16.25Z"
+                    fill="white" />
+                </svg>
+              </a>
+
+
+            </div>
+            <button type="button"
+              class="btn btn-secondaryBtn text-white d-flex align-content-center gap-1 px-6 py-2.5 mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M16.8657 7.46924C16.3036 9.21181 16 11.0705 16 13C16 22.9411 24.0589 31 34 31C36.5346 31 38.9468 30.4762 41.1343 29.5308C38.8006 36.766 32.0116 42 24 42C14.0589 42 6 33.9411 6 24C6 16.5935 10.4734 10.2317 16.8657 7.46924Z"
+                  fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="bevel" />
+                <path d="M31.6605 10H41L31 18H41" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="bevel" />
+              </svg>
+              現在入睡</button>
+          </div>
+        </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
