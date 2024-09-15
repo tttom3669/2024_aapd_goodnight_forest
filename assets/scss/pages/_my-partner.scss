@@ -1,0 +1,74 @@
+.my-partner {
+  &__bg {
+    position: relative;
+    padding-top: $header-height;
+    width: 100%;
+    aspect-ratio: 375/403;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    &::before {
+      background-image: linear-gradient(
+        180deg,
+        #1d1a3e -27.96%,
+        rgba(29, 26, 62, 0.73) -6.26%,
+        rgba(29, 26, 62, 0.41) 17.38%,
+        rgba(29, 26, 62, 0) 36.81%
+      );
+    }
+    &::after {
+      background-image: linear-gradient(
+        0deg,
+        #1d1a3e 0%,
+        rgba(29, 26, 62, 0.73) 19.44%,
+        rgba(29, 26, 62, 0.41) 40.62%,
+        rgba(29, 26, 62, 0) 58.03%
+      );
+    }
+    background: url('/assets/images/myPartner-bg-1.png');
+    background-repeat: no-repeat;
+    background-position: -136.307px -13px;
+    background-size: 173.173% 112.159%;
+  }
+
+  &__nav {
+    justify-content: center;
+    gap: 2px;
+    .nav-link {
+      color: $grey-200;
+      padding: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 125%; /* 17.5px */
+      &.active {
+        color: $white;
+      }
+    }
+  }
+
+  &__tab-content {
+    padding: 20px 0px 28px 0px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: (0px -1px 0px rgba(255, 255, 255, 0.3));
+
+    &-item {
+      border-radius: 16px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      background-color: $darkBlue-3;
+    }
+  }
+}
