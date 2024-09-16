@@ -42,13 +42,13 @@
 .sleep-standby-bg {
   width: 100%;
   background-image: linear-gradient(
-    360deg,
-    #1D1A3E 5.17%,
-    rgba(29, 26, 62, 0.73) 12.88%,
-    rgba(29, 26, 62, 0.41) 22.54%,
-    rgba(29, 26, 62, 0) 32.2%
-  ),
-  url('/assets/images/sleep-standby-bg.png');
+      360deg,
+      #1d1a3e 5.17%,
+      rgba(29, 26, 62, 0.73) 12.88%,
+      rgba(29, 26, 62, 0.41) 22.54%,
+      rgba(29, 26, 62, 0) 32.2%
+    ),
+    url('/assets/images/sleep-standby-bg.png');
   background-repeat: no-repeat;
   position: relative;
 }
@@ -56,7 +56,7 @@
   width: 192px;
   overflow: visible !important;
 }
-.swiper-silde {
+.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@
   transform: scale(0.8) !important;
 }
 .swiper-slide-active {
-  transform: scale(1) !important;; 
+  transform: scale(1) !important;
 }
 .alarm-clock {
   width: 100%;
@@ -75,7 +75,7 @@
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 .alarm-clock-item {
   width: 192px;
@@ -101,7 +101,7 @@
       text-align: center;
       padding: 7.88px 0px;
       border-radius: 0px 0px 16px 16px;
-      background:rgba(29, 26, 62, 0.4);
+      background: rgba(29, 26, 62, 0.4);
       backdrop-filter: blur(10px);
     }
   }
