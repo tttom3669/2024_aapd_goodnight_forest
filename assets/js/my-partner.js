@@ -42,8 +42,6 @@ function changeData() {
   const contentBg = document.querySelector(`.my-partner__bg`);
 
   const template = (key) => {
-    console.log(key);
-
     return `<div class="d-flex flex-column  px-8 text-white">
               <div class="d-flex flex-column gap-3 align-items-start mb-2">
                 <h3 class="fs-h4 fw-bold">${partnerData[key].title}</h3>
@@ -70,8 +68,14 @@ function changeData() {
   partnerBtn.forEach((btn) => {
     btn.addEventListener('click', function () {
       resetBtnStyle();
-      btn.classList.add('active');
+
       const key = Number(this.dataset.id.match(/-(.+)/)[1]) - 1;
+      document
+        .querySelectorAll(`[data-id="partner-${key + 1}"]`)
+        .forEach((btn) => {
+          btn.classList.add('active');
+        });
+
       content.innerHTML = template(key);
       const bgStyleClass = Array.from(contentBg.classList).filter((item) =>
         item.match(/my-partner__bg--(.+)/)
