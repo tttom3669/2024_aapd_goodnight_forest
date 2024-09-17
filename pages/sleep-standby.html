@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>睡眠待機頁面</title>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
   <%- include('./layout/header'); -%>
-  <section class="sleep-standby-bg">
-    <div class="container bg-top d-flexflex-column align-items-center justify-content-center">
-      <div class="set-clock">
-        <a href="#" class="clock-time">21:41</a>
-        <button type="button" class="set-clock-item">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
-              <path d="M23.9998 44.3332C34.1251 44.3332 42.3332 36.1251 42.3332 25.9999C42.3332 15.8747 34.1251 7.66656 23.9998 7.66656C13.8746 7.66656 5.6665 15.8747 5.6665 25.9999C5.6665 36.1251 13.8746 44.3332 23.9998 44.3332Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
-              <path d="M23.7594 15.3536L23.7582 26.3624L31.5305 34.1347" stroke="#8e8c9e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4 9.00001L11 4.00001" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M44 9.00001L37 4.00001" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <span class="text-white fw-bold fs-base lh-sm ms-1">未設定鬧鐘</span>
-        </button>
+    <section class="sleep-standby-bg">
+      <div class="container bg-top d-flexflex-column align-items-center justify-content-center">
+        <div class="set-clock">
+          <a href="#" class="clock-time">21:41</a>
+          <button type="button" class="set-clock-item">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M23.9998 44.3332C34.1251 44.3332 42.3332 36.1251 42.3332 25.9999C42.3332 15.8747 34.1251 7.66656 23.9998 7.66656C13.8746 7.66656 5.6665 15.8747 5.6665 25.9999C5.6665 36.1251 13.8746 44.3332 23.9998 44.3332Z"
+                  fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" />
+                <path d="M23.7594 15.3536L23.7582 26.3624L31.5305 34.1347" stroke="#8e8c9e" stroke-width="4"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 9.00001L11 4.00001" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M44 9.00001L37 4.00001" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="text-white fw-bold fs-base lh-sm ms-1">未設定鬧鐘</span>
+          </button>
+        </div>
+        <div class="set-clock-close">
+          <button type="button" class="set-clock-btn">
+            <span class="text-white fw-bold fs-base lh-sm ms-1">長按結束鬧鐘</span>
+          </button>
+        </div>
       </div>
-      <div class="set-clock-close">
-        <button type="button" class="set-clock-btn">
-          <span class="text-white fw-bold fs-base lh-sm ms-1">長按結束鬧鐘</span>
-        </button>
-      </div>
-    </div>
-    <div class="alarm-clock">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="alarm-clock-item">
-              <div class="alarm-clock-title">
-                <p class="alarm-clock-text">第2章-呼吸與專注</p>
-                <span class="play-stop">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/><path d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z" fill="#1d1a3e" stroke="#1d1a3e" stroke-width="4" stroke-linejoin="round"/></svg>
-                </span>
+      <div class="alarm-clock">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="alarm-clock-item">
+                <div class="alarm-clock-title">
+                  <p class="alarm-clock-text">第2章-呼吸與專注</p>
+                  <span class="play-stop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48" fill="none">
+                      <path
+                        d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" />
+                      <path d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z" fill="#1d1a3e"
+                        stroke="#1d1a3e" stroke-width="4" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="alarm-clock-item">
-              <div class="alarm-clock-title">
-                <p class="alarm-clock-text">第2章-呼吸與專注</p>
-                <span class="play-stop">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/><path d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z" fill="#1d1a3e" stroke="#1d1a3e" stroke-width="4" stroke-linejoin="round"/></svg>
-                </span>
+            <div class="swiper-slide">
+              <div class="alarm-clock-item">
+                <div class="alarm-clock-title">
+                  <p class="alarm-clock-text">第2章-呼吸與專注</p>
+                  <span class="play-stop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48" fill="none">
+                      <path
+                        d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" />
+                      <path d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z" fill="#1d1a3e"
+                        stroke="#1d1a3e" stroke-width="4" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="alarm-clock-item">
-              <div class="alarm-clock-title">
-                <p class="alarm-clock-text">第2章-呼吸與專注</p>
-                <span class="play-stop">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/><path d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z" fill="#1d1a3e" stroke="#1d1a3e" stroke-width="4" stroke-linejoin="round"/></svg>
-                </span>
+            <div class="swiper-slide">
+              <div class="alarm-clock-item">
+                <div class="alarm-clock-title">
+                  <p class="alarm-clock-text">第2章-呼吸與專注</p>
+                  <span class="play-stop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 48 48" fill="none">
+                      <path
+                        d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" />
+                      <path d="M20 24V17.0718L26 20.5359L32 24L26 27.4641L20 30.9282V24Z" fill="#1d1a3e"
+                        stroke="#1d1a3e" stroke-width="4" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <%- include('./layout/footer'); -%>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="../main.js"></script>
+    </section>
+    <%- include('./layout/footer'); -%>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script type="module" src="../main.js"></script>
 </body>
+
 </html>

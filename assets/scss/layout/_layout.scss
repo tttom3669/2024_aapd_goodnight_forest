@@ -1,7 +1,3 @@
 @import './header';
 @import './footer';
-
-.site-main {
-  padding-top: $header-height;
-  padding-bottom: $footer-height;
-}
+@import './container';

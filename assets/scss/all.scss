@@ -5,7 +5,8 @@
 @import './base/reset';
 @import './base/typography';
 // helpers
-@import './helpers/custom-utilities';
+@import './helpers/helper-variables';
+@import './helpers/helper-utilities';
 // layout
 @import './layout/layout';
 // components
