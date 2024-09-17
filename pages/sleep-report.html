@@ -1,246 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>睡眠報告頁面</title>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
   <%- include('./layout/header'); -%>
-  <section class="bg-top">
-    <div class="container">
-      <h2 class="fs-base text-white lh-sm fw-bold py-3 text-center">睡眠報告</h2>
-      <div class="dashboard py-6">
-        <div class="dashboard-circle ">
-          <div class="dashboard-circle-line"></div>
-          <div class="dashboard-circle-one"></div>
-          <div class="dashboard-circle-two"></div>
-          <div class="dashboard-circle-three"></div>
-          <div class="dashboard-text">
-            <p class="text-danger-1 fw-bold lh-sm fs-h2">25%</p>
-            <div class="d-flex align-items-center">
-              <p class="text-white lh-sm fw-medium fs-sm">睡眠品質</p>
-              <a href="#">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C29.5228 44 34.5228 41.7614 38.1421 38.1421C41.7614 34.5228 44 29.5228 44 24C44 18.4772 41.7614 13.4772 38.1421 9.85786C34.5228 6.23858 29.5228 4 24 4C18.4772 4 13.4772 6.23858 9.85786 9.85786C6.23858 13.4772 4 18.4772 4 24C4 29.5228 6.23858 34.5228 9.85786 38.1421C13.4772 41.7614 18.4772 44 24 44Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24 11C25.3807 11 26.5 12.1193 26.5 13.5C26.5 14.8807 25.3807 16 24 16C22.6193 16 21.5 14.8807 21.5 13.5C21.5 12.1193 22.6193 11 24 11Z" fill="#232437"/><path d="M24.5 34V20H23.5H22.5" stroke="#232437" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 34H28" stroke="#232437" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <section class="bg-top">
+      <div class="container">
+        <h2 class="fs-base text-white lh-sm fw-bold py-3 text-center">睡眠報告</h2>
+        <div class="dashboard py-6">
+          <div class="dashboard-circle ">
+            <div class="dashboard-circle-line"></div>
+            <div class="dashboard-circle-one"></div>
+            <div class="dashboard-circle-two"></div>
+            <div class="dashboard-circle-three"></div>
+            <div class="dashboard-text">
+              <p class="text-danger-1 fw-bold lh-sm fs-h2">25%</p>
+              <div class="d-flex align-items-center">
+                <p class="text-white lh-sm fw-medium fs-sm">睡眠品質</p>
+                <a href="#">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                      <path
+                        d="M24 44C29.5228 44 34.5228 41.7614 38.1421 38.1421C41.7614 34.5228 44 29.5228 44 24C44 18.4772 41.7614 13.4772 38.1421 9.85786C34.5228 6.23858 29.5228 4 24 4C18.4772 4 13.4772 6.23858 9.85786 9.85786C6.23858 13.4772 4 18.4772 4 24C4 29.5228 6.23858 34.5228 9.85786 38.1421C13.4772 41.7614 18.4772 44 24 44Z"
+                        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24 11C25.3807 11 26.5 12.1193 26.5 13.5C26.5 14.8807 25.3807 16 24 16C22.6193 16 21.5 14.8807 21.5 13.5C21.5 12.1193 22.6193 11 24 11Z"
+                        fill="#232437" />
+                      <path d="M24.5 34V20H23.5H22.5" stroke="#232437" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M21 34H28" stroke="#232437" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div>
+              <span class="detailed-status">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none">
+                  <path
+                    d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                    fill="#1d1a3e" stroke="#FD615B" stroke-width="4" stroke-linejoin="round" />
+                  <path d="M31 35C31 35 29 31 24 31C19 31 17 35 17 35" stroke="#FD615B" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M35 18L28 17" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M33 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M20 17L13 18" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M15 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <ul class="d-flex align-items-center progress-bg py-3  px-4">
+          <li class="d-flex justify-content-start align-items-center">
+            <div class="me-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none">
+                <path d="M8 12C8 10.3431 9.34315 9 11 9H37C38.6569 9 40 10.3431 40 12V23H8V12Z" stroke="#FFFFFF"
+                  stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 35V39" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M42 35V39" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20 18H14C12.3431 18 11 19.3431 11 21V23H23V21C23 19.3431 21.6569 18 20 18Z" fill="none"
+                  stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M34 18H28C26.3431 18 25 19.3431 25 21V23H37V21C37 19.3431 35.6569 18 34 18Z" fill="none"
+                  stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 26C4 24.3431 5.34315 23 7 23H41C42.6569 23 44 24.3431 44 26V35H4V26Z" stroke="#FFFFFF"
+                  stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <span class="text-white fs-sm fw-medium lh-sm mb-1">8小時10分鐘</span>
+              <span class="fs-xs text-grey-50 fw-normal clock-lh-text">床上時間</span>
+            </div>
+          </li>
+          <li class="vertical-line"></li>
+          <li class="d-flex justify-content-center align-items-center">
+            <div class="me-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M16.8657 7.46924C16.3036 9.21181 16 11.0705 16 13C16 22.9411 24.0589 31 34 31C36.5346 31 38.9468 30.4762 41.1343 29.5308C38.8006 36.766 32.0116 42 24 42C14.0589 42 6 33.9411 6 24C6 16.5935 10.4734 10.2317 16.8657 7.46924Z"
+                  fill="#FFFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" />
+                <path d="M31.6605 10H41L31 18H41" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <span class="text-white fs-sm fw-medium lh-sm mb-1">7小時10分鐘</span>
+              <span class="fs-xs text-grey-50 fw-normal clock-lh-text">入眠時間</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container py-6">
+        <h2 class="fs-base text-white lh-sm fw-bold mb-3">昨晚睡眠報告</h2>
+        <div class="chart-report">
+          <img class="chart-content mb-3 w-100" src="/assets/images/chart-report.png" alt="">
+          <div class="interrupt-hint-line"></div>
+          <a href="./report-introduce.html">
+            <button type="button" class="interrupt-hint-status">
+              <span class="fs-xs lh-sm fw-medium text-white mb-1">呼吸中斷 :
+                <span class="fs-xs lh-sm fw-medium text-grey-50">上午 1:30</span>
+              </span>
+              <span class="fs-xxs lh-base fw-medium text-grey-50">(上午 1:30 - 上午 2:00)</span>
+            </button>
+          </a>
+          <div>
+            <ul class="d-flex justify-content-between align-items-center">
+              <li class="d-flex align-items-center">
+                <span class="status-round-awake bg-primary-light"></span>
+                <span class="fs-xxs lh-sm fw-medium text-grey-50">醒著</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="status-round-awake bg-primary"></span>
+                <span class="fs-xxs lh-sm fw-medium text-grey-50">淺睡</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="status-round-awake bg-primary-dark"></span>
+                <span class="fs-xxs lh-sm fw-medium text-grey-50">深睡</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <span class="status-round-awake bg-secondary"></span>
+                <span class="fs-xxs lh-sm fw-medium text-grey-50">REM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container py-6">
+        <h2 class="fs-base text-white lh-sm fw-bold mb-3">昨晚詳細睡眠狀況</h2>
+        <ul>
+          <a>
+            <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
+              <div class="me-4">
+                <p class="text-white fs-sm fw-bold lh-sm">呼吸中斷</p>
+                <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span
+                    class="fs-h5 text-white fw-normal mx-1">26.2</span>次<br>每小時</p>
+              </div>
+              <div class="detailed-status">
+                <span class="mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                      fill="none" stroke="#FD615B" stroke-width="4" stroke-linejoin="round" />
+                    <path d="M31 35C31 35 29 31 24 31C19 31 17 35 17 35" stroke="#FD615B" stroke-width="4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M35 18L28 17" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M33 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M20 17L13 18" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M15 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
                 </span>
-              </a>
-            </div>
-          </div>
-          <div>
-            <span class="detailed-status">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="#1d1a3e" stroke="#FD615B" stroke-width="4" stroke-linejoin="round"/><path d="M31 35C31 35 29 31 24 31C19 31 17 35 17 35" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 18L28 17" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 17L13 18" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <ul class="d-flex align-items-center progress-bg py-3  px-4">
-        <li class="d-flex justify-content-start align-items-center">
-          <div class="me-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none"><path d="M8 12C8 10.3431 9.34315 9 11 9H37C38.6569 9 40 10.3431 40 12V23H8V12Z" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 35V39" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 35V39" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 18H14C12.3431 18 11 19.3431 11 21V23H23V21C23 19.3431 21.6569 18 20 18Z" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 18H28C26.3431 18 25 19.3431 25 21V23H37V21C37 19.3431 35.6569 18 34 18Z" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 26C4 24.3431 5.34315 23 7 23H41C42.6569 23 44 24.3431 44 26V35H4V26Z" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <span class="text-white fs-sm fw-medium lh-sm mb-1">8小時10分鐘</span>
-            <span class="fs-xs text-grey-50 fw-normal clock-lh-text">床上時間</span>
-          </div>
-        </li>
-        <li class="vertical-line"></li>
-        <li class="d-flex justify-content-center align-items-center">
-          <div class="me-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none"><path d="M16.8657 7.46924C16.3036 9.21181 16 11.0705 16 13C16 22.9411 24.0589 31 34 31C36.5346 31 38.9468 30.4762 41.1343 29.5308C38.8006 36.766 32.0116 42 24 42C14.0589 42 6 33.9411 6 24C6 16.5935 10.4734 10.2317 16.8657 7.46924Z" fill="#FFFFFFF" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/><path d="M31.6605 10H41L31 18H41" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div>
-            <span class="text-white fs-sm fw-medium lh-sm mb-1">7小時10分鐘</span>
-            <span class="fs-xs text-grey-50 fw-normal clock-lh-text">入眠時間</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <div class="container py-6">
-      <h2 class="fs-base text-white lh-sm fw-bold mb-3">昨晚睡眠報告</h2>
-      <div class="chart-report">
-        <img class="chart-content mb-3 w-100" src="/assets/images/chart-report.png" alt="">
-        <div class="interrupt-hint-line"></div>
-        <a href="./report-introduce.html">
-          <button type="button" class="interrupt-hint-status">
-            <span class="fs-xs lh-sm fw-medium text-white mb-1">呼吸中斷 : 
-              <span class="fs-xs lh-sm fw-medium text-grey-50">上午 1:30</span>
-            </span>
-            <span class="fs-xxs lh-base fw-medium text-grey-50">(上午 1:30 - 上午 2:00)</span>
-          </button>
-        </a>
-        <div>
-          <ul class="d-flex justify-content-between align-items-center">
-            <li class="d-flex align-items-center">
-              <span class="status-round-awake bg-primary-light"></span>
-              <span class="fs-xxs lh-sm fw-medium text-grey-50">醒著</span>
-            </li>
-            <li class="d-flex align-items-center"> 
-              <span class="status-round-awake bg-primary"></span>
-              <span class="fs-xxs lh-sm fw-medium text-grey-50">淺睡</span>
-            </li>
-            <li class="d-flex align-items-center">
-              <span class="status-round-awake bg-primary-dark"></span>
-              <span class="fs-xxs lh-sm fw-medium text-grey-50">深睡</span>
-            </li>
-            <li class="d-flex align-items-center">
-              <span class="status-round-awake bg-secondary"></span>
-              <span class="fs-xxs lh-sm fw-medium text-grey-50">REM</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container py-6">
-      <h2 class="fs-base text-white lh-sm fw-bold mb-3">昨晚詳細睡眠狀況</h2>
-      <ul>
-        <a >
-          <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
-            <div class="me-4">
-              <p class="text-white fs-sm fw-bold lh-sm">呼吸中斷</p>
-              <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span class="fs-h5 text-white fw-normal mx-1">26.2</span>次<br>每小時</p>
-            </div>
-            <div class="detailed-status">
-              <span class="mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#FD615B" stroke-width="4" stroke-linejoin="round"/><path d="M31 35C31 35 29 31 24 31C19 31 17 35 17 35" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 18L28 17" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 17L13 18" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 18V27" stroke="#FD615B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-              <p class="text-danger-1 fs-xxs lh-base fw-normal">極高</p>
-              <span class="detailed-line bg-danger-1"></span>
-            </div>
-          </li>
-        </a>
-        <a href="./report-introduce.html">
-          <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
-            <div class="me-4">
-              <p class="text-white fs-sm fw-bold lh-sm">鼾聲裝況</p>
-              <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span class="fs-h5 text-white fw-normal mx-1">4</span>次<br>每小時</p>
-            </div>
-            <div class="detailed-status">
-              <span class="mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#fdda43" stroke-width="4" stroke-linejoin="round"/><path d="M31 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 31C31 31 29 35 24 35C19 35 17 31 17 31" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-              <span class="text-warning-1 fs-xxs lh-base fw-normal">中</span>
-              <span class="detailed-line bg-warning-1 py-0"></span>
-            </div>
-          </li>
-        </a>
-        <a href="./report-introduce.html">
-          <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
-            <div class="me-4">
-              <p class="text-white fs-sm fw-bold lh-sm">呼吸頻率</p>
-              <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span class="fs-h5 text-white fw-normal mx-1">19</span>次<br>每分鐘</p>
-            </div>
-            <div class="detailed-status">
-              <span class="mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#fdda43" stroke-width="4" stroke-linejoin="round"/><path d="M31 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 31C31 31 29 35 24 35C19 35 17 31 17 31" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-              <span class="text-warning-1 fs-xxs lh-base fw-normal">中</span>
-              <span class="detailed-line bg-warning-1 py-0"></span>
-            </div>
-          </li>
-        </a>
-        <a href="./report-introduce.html">
-          <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
-            <div class="me-4">
-              <p class="text-white fs-sm fw-bold lh-sm">咳嗽狀況</p>
-              <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span class="fs-h5 text-white fw-normal mx-1">0.2</span>次<br>每小時</p>
-            </div>
-            <div class="detailed-status">
-              <span class="mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#34c597" stroke-width="4" stroke-linejoin="round"/><path d="M24 35C29 35 31 31 31 31H17C17 31 19 35 24 35Z" stroke="#34c597" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-              <span class="text-success-1 fs-xxs lh-base fw-normal">低</span>
-              <span class="detailed-line bg-success-1 py-0"></span>
-            </div>
-          </li>
-        </a>
-        <a href="./report-introduce.html">
-          <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
-            <div class="me-4">
-              <p class="text-white fs-sm fw-bold lh-sm">環境噪音</p>
-              <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span class="fs-h5 text-white fw-normal mx-1">10</span>分貝<br>每小時</p>
-            </div>
-            <div class="detailed-status">
-              <span class="mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#34c597" stroke-width="4" stroke-linejoin="round"/><path d="M24 35C29 35 31 31 31 31H17C17 31 19 35 24 35Z" stroke="#34c597" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
-              <span class="text-success-1 fs-xxs lh-base fw-normal">低</span>
-              <span class="detailed-line bg-success-1 py-0"></span>
-            </div>
-          </li>
-        </a>
-        <a href="./report-introduce.html">
-          <li class="detailed-item">
-            <div class="me-4">
-              <p class="text-white fs-sm fw-bold lh-sm">心率</p>
-              <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span class="fs-h5 text-white fw-normal mx-1">40</span>次<br>每分鐘</p>
-            </div>
-          </li>
-        </a>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="fs-base text-white lh-sm fw-bold mb-3">個人化文章推薦</h2>
-        <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
-          看更多
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-5">
-    <div class="article-box">
-      <div class="article">
-        <ul class="d-flex gap-3">
-          <a href="#">
-            <li>
-              <img class="article-img mb-2" src="/assets/images/article-1.png" alt="">
-              <p class="mb-1 text-white fs-sm lh-sm fw-medium">失眠的原因與對策</p>
-              <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">探討常見的失眠原因，如壓力、生活習慣</p>
+                <p class="text-danger-1 fs-xxs lh-base fw-normal">極高</p>
+                <span class="detailed-line bg-danger-1"></span>
+              </div>
             </li>
           </a>
-          <a href="#">
-            <li>
-              <img class="article-img mb-2" src="/assets/images/article-2.png" alt="">
-              <p class="mb-1 text-white fs-sm lh-sm fw-medium">睡眠與精神健康</p>
-              <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">睡眠是維持身體和心理健康的關鍵。長庚醫院</p>
+          <a href="./report-introduce.html">
+            <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
+              <div class="me-4">
+                <p class="text-white fs-sm fw-bold lh-sm">鼾聲裝況</p>
+                <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span
+                    class="fs-h5 text-white fw-normal mx-1">4</span>次<br>每小時</p>
+              </div>
+              <div class="detailed-status">
+                <span class="mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                      fill="none" stroke="#fdda43" stroke-width="4" stroke-linejoin="round" />
+                    <path d="M31 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M31 31C31 31 29 35 24 35C19 35 17 31 17 31" stroke="#fdda43" stroke-width="4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="text-warning-1 fs-xxs lh-base fw-normal">中</span>
+                <span class="detailed-line bg-warning-1 py-0"></span>
+              </div>
             </li>
           </a>
-          <a href="#">
-            <li>
-              <img class="article-img mb-2" src="/assets/images/article-3.png" alt="">
-              <p class="mb-1 text-white fs-sm lh-sm fw-medium">健康睡眠習慣</p>
-              <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">評估智能手機、穿戴裝置和應用程式如何影響睡眠質量，以及如何使用這些科技來改善睡眠。</p>
+          <a href="./report-introduce.html">
+            <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
+              <div class="me-4">
+                <p class="text-white fs-sm fw-bold lh-sm">呼吸頻率</p>
+                <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span
+                    class="fs-h5 text-white fw-normal mx-1">19</span>次<br>每分鐘</p>
+              </div>
+              <div class="detailed-status">
+                <span class="mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                      fill="none" stroke="#fdda43" stroke-width="4" stroke-linejoin="round" />
+                    <path d="M31 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M31 31C31 31 29 35 24 35C19 35 17 31 17 31" stroke="#fdda43" stroke-width="4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="text-warning-1 fs-xxs lh-base fw-normal">中</span>
+                <span class="detailed-line bg-warning-1 py-0"></span>
+              </div>
+            </li>
+          </a>
+          <a href="./report-introduce.html">
+            <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
+              <div class="me-4">
+                <p class="text-white fs-sm fw-bold lh-sm">咳嗽狀況</p>
+                <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span
+                    class="fs-h5 text-white fw-normal mx-1">0.2</span>次<br>每小時</p>
+              </div>
+              <div class="detailed-status">
+                <span class="mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                      fill="none" stroke="#34c597" stroke-width="4" stroke-linejoin="round" />
+                    <path d="M24 35C29 35 31 31 31 31H17C17 31 19 35 24 35Z" stroke="#34c597" stroke-width="4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M31 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="text-success-1 fs-xxs lh-base fw-normal">低</span>
+                <span class="detailed-line bg-success-1 py-0"></span>
+              </div>
+            </li>
+          </a>
+          <a href="./report-introduce.html">
+            <li class="d-flex justify-content-between align-items-center detailed-item mb-3">
+              <div class="me-4">
+                <p class="text-white fs-sm fw-bold lh-sm">環境噪音</p>
+                <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span
+                    class="fs-h5 text-white fw-normal mx-1">10</span>分貝<br>每小時</p>
+              </div>
+              <div class="detailed-status">
+                <span class="mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                      fill="none" stroke="#34c597" stroke-width="4" stroke-linejoin="round" />
+                    <path d="M24 35C29 35 31 31 31 31H17C17 31 19 35 24 35Z" stroke="#34c597" stroke-width="4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M31 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="text-success-1 fs-xxs lh-base fw-normal">低</span>
+                <span class="detailed-line bg-success-1 py-0"></span>
+              </div>
+            </li>
+          </a>
+          <a href="./report-introduce.html">
+            <li class="detailed-item">
+              <div class="me-4">
+                <p class="text-white fs-sm fw-bold lh-sm">心率</p>
+                <p class="fs-xxs lh-base text-grey-50 fw-normal">平均<span
+                    class="fs-h5 text-white fw-normal mx-1">40</span>次<br>每分鐘</p>
+              </div>
             </li>
           </a>
         </ul>
       </div>
-    </div>
-  </section>
-  <%- include('./layout/footer'); -%>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="../main.js"></script>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-base text-white lh-sm fw-bold mb-3">個人化文章推薦</h2>
+          <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
+            看更多
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                <path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-bottom">
+      <div class="article-box">
+        <div class="article">
+          <ul class="d-flex gap-3">
+            <a href="#">
+              <li>
+                <img class="article-img mb-2" src="/assets/images/article-1.png" alt="">
+                <p class="mb-1 text-white fs-sm lh-sm fw-medium">失眠的原因與對策</p>
+                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">探討常見的失眠原因，如壓力、生活習慣</p>
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <img class="article-img mb-2" src="/assets/images/article-2.png" alt="">
+                <p class="mb-1 text-white fs-sm lh-sm fw-medium">睡眠與精神健康</p>
+                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">睡眠是維持身體和心理健康的關鍵。長庚醫院</p>
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <img class="article-img mb-2" src="/assets/images/article-3.png" alt="">
+                <p class="mb-1 text-white fs-sm lh-sm fw-medium">健康睡眠習慣</p>
+                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">
+                  評估智能手機、穿戴裝置和應用程式如何影響睡眠質量，以及如何使用這些科技來改善睡眠。</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/main_navbar.ejs',{ active: 'index' })%>
+
+      <%- include('./layout/footer'); -%>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script type="module" src="../main.js"></script>
 </body>
+
 </html>
