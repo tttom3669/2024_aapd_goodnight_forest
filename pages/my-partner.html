@@ -11,10 +11,10 @@
 <body>
   <%- include('./layout/header'); -%>
     <main>
-      <div class="my-partner__bg mb-6">
+      <div class="my-partner__bg my-partner__bg--3 mb-6">
         <%- include('./layout/return_navbar',{ lastPage: './sleep-partner.html' ,title: '' ,iconType : '' ,iconLink:'#'
           }); -%>
-          <div class="position-relative container z-1 mt-auto">
+          <div class="position-relative container z-1 mt-auto" data-id="partner-content">
             <div class="d-flex flex-column  px-8 text-white">
               <div class="d-flex flex-column gap-3 align-items-start mb-2">
                 <h3 class="fs-h4 fw-bold">星蘑蘑夜曲</h3>
@@ -54,57 +54,38 @@
         </li>
       </ul>
 
-      <g filter="url(#filter0_d_17943_2025)">
-        <path
-          d="M0 25C0 11.7452 10.7452 1 24 1H351C364.255 1 375 11.7452 375 25V292C375 305.255 364.255 316 351 316H24C10.7452 316 0 305.255 0 292V25Z"
-          fill="#1D1A3E" />
-      </g>
-      <defs>
-        <filter id="filter0_d_17943_2025" x="0" y="0" width="375" height="316" filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha" />
-          <feOffset dy="-1" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0" />
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17943_2025" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17943_2025" result="shape" />
-        </filter>
-      </defs>
-      </svg> -->
       <div class="tab-content my-partner__tab-content text-white" id="pills-tabContent">
         <div class="tab-pane fade show active" id="content-all" role="tabpanel" aria-labelledby="tab-all" tabindex="0">
           <div class="container">
             <div class="px-2">
               <div class="row gx-3 row-gap-6">
                 <div class="col-3">
-                  <div class="my-partner__tab-content-item my-partner__tab-content-item--1"
-                    style="background-image: url(/assets/images/sleep-partner-card-back.png);">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--1" data-type="btn-partner"
+                    data-id="partner-1" style="background-image: url(/assets/images/sleep-partner-card-back.png);">
                     &nbsp;
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="my-partner__tab-content-item my-partner__tab-content-item--2"
-                    style="background-image: url(/assets/images/myPartner-item-3.png);">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--2" data-type="btn-partner"
+                    data-id="partner-2" style="background-image: url(/assets/images/myPartner-item-3.png);">
                     &nbsp;
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="my-partner__tab-content-item my-partner__tab-content-item--3 active"
-                    style="background-image: url(/assets/images/myPartner-item-1.png);">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--3 active" data-id="partner-3"
+                    data-type="btn-partner" style="background-image: url(/assets/images/myPartner-item-1.png);">
                     &nbsp;
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="my-partner__tab-content-item my-partner__tab-content-item--4"
-                    style="background-image: url(/assets/images/myPartner-item-2.png);">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--4" data-type="btn-partner"
+                    data-id="partner-4" style="background-image: url(/assets/images/myPartner-item-2.png);">
                     &nbsp;
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="my-partner__tab-content-item my-partner__tab-content-item--5"
-                    style="background-image: url(/assets/images/myPartner-item-4.png);">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--5" data-type="btn-partner"
+                    data-id="partner-5" style="background-image: url(/assets/images/myPartner-item-4.png);">
                     &nbsp;
                   </div>
                 </div>
@@ -124,7 +105,19 @@
           <div class="container">
             <div class="px-2">
               <div class="row gx-3 row-gap-6">
-                <% for(let i=0; i<12; i++ ) {%>
+                <div class="col-3">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--1" data-type="btn-partner"
+                    data-id="partner-1" style="background-image: url(/assets/images/sleep-partner-card-back.png);">
+                    &nbsp;
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="my-partner__tab-content-item my-partner__tab-content-item--4" data-type="btn-partner"
+                    data-id="partner-4" style="background-image: url(/assets/images/myPartner-item-2.png);">
+                    &nbsp;
+                  </div>
+                </div>
+                <% for(let i=0; i<10; i++ ) {%>
                   <div class="col-3">
                     <div class="my-partner__tab-content-item pe-none">
                       &nbsp;
@@ -184,6 +177,7 @@
     </main>
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
+      <script type="module" src="../assets/js/my-partner.js"></script>
 </body>
 
 </html>
