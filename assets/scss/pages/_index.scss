@@ -50,7 +50,7 @@
       color: $white;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) rotate(15deg);
+      transform: translate(-50%, -50%) rotate(-15deg);
       font-size: 16px;
       font-weight: 700;
       line-height: 1.25;
@@ -59,18 +59,19 @@
         white-space: nowrap;
       }
       &-bg {
+        mix-blend-mode: overlay;
         position: relative;
-        z-index: 2;
+        z-index: 3;
         width: 127.1px;
         height: 127.1px;
         border-radius: 48.51px;
-        transform: rotate(-15deg);
-        box-shadow: 0px 0px 11.41px 4.28px #ffffff66 inset;
-        background: linear-gradient(
-          90.82deg,
+        transform: rotate(15deg);
+        background-image: linear-gradient(
+          91deg,
           rgba(255, 255, 255, 0) -12.49%,
           rgba(52, 69, 119, 0.9) 113%
         );
+        box-shadow: 0px 0px 11.413px 4.28px rgba(255, 255, 255, 0.4) inset;
       }
     }
 
