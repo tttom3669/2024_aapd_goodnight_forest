@@ -52,7 +52,7 @@ function changeData() {
               </div>
 
               <p class="fs-xs mb-4">${partnerData[key].content}</p>
-              <a href="./sleep-partner-single.html"
+              <a href="./sleep-partner-single.html?bg=${key}"
                 class="btn btn-primary w-100 py-3 fw-bold text-darkBlue-1 rounded-md mb-2">開始</a>
             </div>`;
   };
