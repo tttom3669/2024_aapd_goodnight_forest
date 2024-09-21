@@ -33,13 +33,17 @@
             </svg>
             <% } %>
               <% if(iconType=='list' ) {%>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
-                  <path d="M24 19H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M24 10H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M8 38H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M8 28H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M8 10L16 15L8 20V10Z" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="bevel" />
-                </svg>
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPlayList"
+                  aria-controls="offcanvasRight">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                    <path d="M24 19H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
+                    <path d="M24 10H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
+                    <path d="M8 38H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
+                    <path d="M8 28H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
+                    <path d="M8 10L16 15L8 20V10Z" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="bevel" />
+                  </svg>
+                </button>
                 <% } %>
         </a>
         <% } %>
