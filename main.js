@@ -8,3 +8,11 @@ if (document.querySelector('.mySwiper')) {
     loop: true,
   });
 }
+
+const playBtnGroup = document.querySelectorAll(`[data-id="play-btn"]`);
+playBtnGroup.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    btn.querySelector(`[data-id="icon-stop"]`).classList.toggle('d-none');
+    btn.querySelector(`[data-id="icon-play"]`).classList.toggle('d-none');
+  });
+});

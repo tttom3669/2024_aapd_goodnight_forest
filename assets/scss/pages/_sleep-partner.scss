@@ -132,11 +132,36 @@
 }
 
 .sleep-partner-single__bg {
-  background: url('/assets/images/sleep-partner-card-back.png');
-  background-size: 202.818% 100.339%;
   background-repeat: no-repeat;
-  background-position: -344.683px -180.779px;
+
   backdrop-filter: blur(44px);
+
+  &--1 {
+    background: url('/assets/images/sleep-partner-card-back.png');
+    background-size: 202.818% 100.339%;
+    background-position: -344.683px -180.779px;
+  }
+  &--2 {
+    background: url('/assets/images/myPartner-item-3.png');
+    background-position: -81.849px 77.308px;
+    background-size: 170.795% 84.496%;
+  }
+  &--3 {
+    background: url('/assets/images/myPartner-item-1.png');
+    background-position: -33.754px 144.799px;
+    background-size: 142.078% 70.289%;
+  }
+  &--4 {
+    background: url('/assets/images/myPartner-item-2.png');
+    background-position: -7.686px -149px;
+    background-size: 193.584% 95.77%;
+  }
+  &--5 {
+    background: url('/assets/images/myPartner-item-4.png');
+    background-position: -74.891px -137.576px;
+    background-size: 196.57% 97.248%;
+  }
+
   &::before,
   &::after {
     position: absolute;
