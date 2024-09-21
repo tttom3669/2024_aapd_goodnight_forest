@@ -9,3 +9,7 @@
 .bg-bottom {
   padding-bottom: calc($footer-height + $main-nav-height);
 }
+
+.bg-footer {
+  padding-bottom: $footer-height;
+}
