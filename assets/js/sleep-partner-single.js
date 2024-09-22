@@ -1,4 +1,15 @@
 (function () {
+  changeBg();
+  offcanvasPlayListHandler();
+  cusInputRange();
+  voiceHandler();
+})();
+
+/**
+ * 更換內頁背景
+ * @returns
+ */
+function changeBg() {
   // 解析 URL 中的查詢參數
   const urlParams = new URLSearchParams(window.location.search);
   // 檢驗特定的參數是否存在
@@ -52,12 +63,88 @@
   content.innerHTML = data[bgParam].content;
 
   if (bgParam) {
-    console.log(window.location);
-
     const returnLink = document.querySelector(`[data-id="return-link"]`);
+    if (!returnLink) {
+      return;
+    }
     returnLink.addEventListener('click', (e) => {
       e.preventDefault();
       window.location.href = 'my-partner.html'; // 跳轉到 my-partner.html
     });
   }
-})();
+}
+
+/**
+ * 播放清單點擊監控
+ */
+function offcanvasPlayListHandler() {
+  const offcanvasPlayLists = document.querySelectorAll(
+    '.offcanvasPlayList__item'
+  );
+  const resetStyle = () => {
+    offcanvasPlayLists.forEach((list) => {
+      if (list.classList.contains('offcanvasPlayList__item--active')) {
+        list.classList.remove('offcanvasPlayList__item--active');
+      }
+    });
+  };
+
+  offcanvasPlayLists.forEach((list) => {
+    list.addEventListener('click', () => {
+      resetStyle();
+      list.classList.add('offcanvasPlayList__item--active');
+    });
+  });
+}
+
+function cusInputRange() {
+  const changeBg = (item) => {
+    const value = ((item.value - item.min) / (item.max - item.min)) * 100;
+    item.style.backgroundImage = ` linear-gradient(
+      to right,
+       rgba(116, 166, 255, 1) 0%,
+       rgba(116, 166, 255, 1) ${value}%,
+       #fff ${value}%,
+       #fff 100%
+     )`;
+  };
+  const rangeContainer = document.querySelectorAll(
+    '.offcanvasVolume__range-container'
+  );
+
+  rangeContainer.forEach((container) => {
+    const range = container.querySelector('.offcanvasVolume__range');
+    const rangeClose = container.querySelector('.range-close');
+    const rangeFull = container.querySelector('.range-full');
+    changeBg(range);
+
+    range.addEventListener('input', () => {
+      changeBg(range);
+    });
+
+    rangeClose.addEventListener('click', () => {
+      range.value = 0;
+      changeBg(range);
+    });
+    rangeFull.addEventListener('click', () => {
+      range.value = 100;
+      changeBg(range);
+    });
+  });
+}
+
+function voiceHandler() {
+  const voiceContainer = document.querySelector(
+    `[data-id="offcanvasVolume-voice"]`
+  );
+  const voiceM = voiceContainer.querySelector(`[ data-id="voice-m"]`);
+  const voiceW = voiceContainer.querySelector(`[ data-id="voice-w"]`);
+  voiceM.addEventListener('click', () => {
+    voiceM.classList.add('offcanvasVolume__btn--active');
+    voiceW.classList.remove('offcanvasVolume__btn--active');
+  });
+  voiceW.addEventListener('click', () => {
+    voiceW.classList.add('offcanvasVolume__btn--active');
+    voiceM.classList.remove('offcanvasVolume__btn--active');
+  });
+}
