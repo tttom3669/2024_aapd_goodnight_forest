@@ -125,18 +125,24 @@ $spacers: (
   // 36px
   10: $spacer * 2.5,
   // 40px
+  11: $spacer * 2.75,
+  // 44px
   12: $spacer * 3,
   // 48px
   12\.5: $spacer * 3.125,
   // 50px
   13: $spacer * 3.25,
   // 52px
+  14: $spacer * 3.5,
+  // 56px
   15: $spacer * 3.75,
   // 60px
   18: $spacer * 4.5,
   // 72px
   20: $spacer * 5,
   // 80px
+  24: $spacer * 6,
+  // 96px
   25: $spacer * 6.25,
   // 100px
   30: $spacer * 7.5,
@@ -147,4 +153,21 @@ $spacers: (
   // 160px
   50: $spacer * 12.5,
   // 200px
+) !default;
+
+$rounded-values: (
+  null: 1rem,
+  // 16px
+  0: 0,
+  circle: 50%,
+  pill: 50rem,
+  // 800px
+  sm: 1.5rem,
+  // 24px
+  md: 2.5rem,
+  // 40px,
+  lg: 4rem,
+  // 64px
+  xl: 6.25rem,
+  // 100px
 ) !default;

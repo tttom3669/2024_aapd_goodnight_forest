@@ -1,0 +1,15 @@
+.site-main {
+  padding-top: $header-height;
+  padding-bottom: calc($footer-height + $main-nav-height);
+}
+.bg-top {
+  padding-top: $header-height;
+}
+
+.bg-bottom {
+  padding-bottom: calc($footer-height + $main-nav-height);
+}
+
+.bg-footer {
+  padding-bottom: $footer-height;
+}

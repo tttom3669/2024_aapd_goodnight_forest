@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="bg-top bg-footer sleep-partner__bg">
+      <%- include('./layout/return_navbar',{ lastPage: './index.html' ,title: '助眠夥伴' ,iconType : 'default'
+        ,iconLink:'./my-partner.html' }); -%>
+        <div class="conntainer mt-6">
+          <div class="px-3">
+            <div class="sleep-partner__card-container">
+              <div class="sleep-partner__card sleep-partner__card--front">
+                <div class="h-100 d-flex justify-content-center align-items-end pb-10 position-relative z-1">
+                  <a href="javascript:;"
+                    class="sleep-partner__card-trigger text-center fs-sm fw-medium text-white stretched-link">點擊抽卡</a>
+                </div>
+              </div>
+              <div class="sleep-partner__card sleep-partner__card--back">
+                <div class="h-100 d-flex justify-content-center align-items-end pb-6 position-relative z-2">
+                  <div class="d-flex flex-column px-6 text-white">
+                    <div class="d-flex gap-2 align-items-end mb-2">
+                      <h3 class="fs-h4 fw-bold">露米娜</h3>
+                      <p class="py-1 px-3 bg-white rounded-sm fs-xs fw-medium" style="--bs-bg-opacity: 0.4;">冥想夥伴</p>
+                      <p class="fs-xs">35分鐘</p>
+                    </div>
+                    <p class="fs-xs mb-4">露米娜是一位引導冥想的獨角獸導師，用光輝與智慧帶領大家進入平靜和諧的境界</p>
+                    <a href="./sleep-partner-single.html"
+                      class="btn btn-primary w-100 py-3 fw-bold text-darkBlue-1 rounded-md">開始</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-11">
+              <h2 class="text-white fs-base fw-bold mb-4">也可以試試其它助眠方式</h2>
+              <%- include('./layout/categories-bar'); -%>
+            </div>
+          </div>
+        </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

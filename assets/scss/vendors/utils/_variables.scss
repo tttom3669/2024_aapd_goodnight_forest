@@ -378,7 +378,8 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+// $enable-rfs: true !default;
+$enable-rfs: true !default; // cus*
 $enable-validation-icons: true !default;
 $enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
@@ -429,8 +430,8 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  50: 50%,
-  100: 100%,
+  1\/2: 50%,
+  full: 100%,
 ) !default;
 // scss-docs-end position-map
 
@@ -440,7 +441,8 @@ $position-values: (
 
 $body-text-align: null !default;
 $body-color: $gray-900 !default;
-$body-bg: $white !default;
+// $body-bg: $white !default;
+$body-bg: $darkBlue-1 !default; // cus*
 
 $body-secondary-color: rgba($body-color, 0.75) !default;
 $body-secondary-bg: $gray-200 !default;
@@ -455,7 +457,8 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $primary !default;
-$link-decoration: underline !default;
+// $link-decoration: underline !default;
+$link-decoration: none !default; // cus*
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;

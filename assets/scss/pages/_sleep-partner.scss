@@ -1,0 +1,194 @@
+.sleep-partner {
+  &__bg {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 538px;
+      background-image: linear-gradient(
+          358.58deg,
+          #1d1a3e 1.21%,
+          rgba(29, 26, 62, 0.73) 16.66%,
+          rgba(29, 26, 62, 0.407793) 33.49%,
+          rgba(29, 26, 62, 0) 47.33%
+        ),
+        url('/assets/images/sleep-partner_bg.png');
+      pointer-events: none;
+      opacity: 20%;
+      background-repeat: no-repeat;
+      background-position: 70% bottom;
+      background-size: auto 130%;
+      z-index: -1;
+    }
+  }
+  &__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    border: 1px solid rgba($color: $white, $alpha: 0.3);
+    perspective: 150rem;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 16px 0px #d6d0f5b2;
+    overflow: hidden;
+    &--front {
+      &::before {
+        transform: rotateY(-180deg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        content: '';
+        display: block;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/assets/images/sleep-partner-card.png');
+        z-index: 0;
+      }
+      &::after {
+        background: rgba($black, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        display: block;
+        z-index: 1;
+      }
+    }
+    &--back {
+      pointer-events: none;
+      transform: rotateY(180deg);
+      &::before {
+        background-position: 100% 220%;
+        background-repeat: no-repeat;
+        background-size: auto 120%;
+        position: absolute;
+        content: '';
+        display: block;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/assets/images/sleep-partner-card-back.png');
+        z-index: 0;
+      }
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        display: block;
+        z-index: 1;
+        background-image: linear-gradient(
+          359.16deg,
+          #1d1a3e 25.2%,
+          rgba(29, 26, 62, 0.73) 36.03%,
+          rgba(29, 26, 62, 0.407793) 47.84%,
+          rgba(29, 26, 62, 0) 57.54%
+        );
+      }
+    }
+
+    &-container {
+      position: relative;
+      aspect-ratio: 327/ 452;
+      width: 100%;
+      height: auto;
+      &:hover {
+        .sleep-partner__card--front {
+          transform: rotateY(180deg);
+          pointer-events: none;
+        }
+        .sleep-partner__card--back {
+          transform: rotateY(0deg);
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+}
+
+.media-progress {
+  background-color: rgba($white, 0.15);
+  &,
+  &.progress-bar {
+    height: 4px;
+  }
+}
+
+.sleep-partner-single__bg {
+  background-repeat: no-repeat;
+
+  backdrop-filter: blur(44px);
+
+  &--1 {
+    background: url('/assets/images/sleep-partner-card-back.png');
+    background-size: 202.818% 100.339%;
+    background-position: -344.683px -180.779px;
+  }
+  &--2 {
+    background: url('/assets/images/myPartner-item-3.png');
+    background-position: -81.849px 77.308px;
+    background-size: 170.795% 84.496%;
+  }
+  &--3 {
+    background: url('/assets/images/myPartner-item-1.png');
+    background-position: -33.754px 144.799px;
+    background-size: 142.078% 70.289%;
+  }
+  &--4 {
+    background: url('/assets/images/myPartner-item-2.png');
+    background-position: -7.686px -149px;
+    background-size: 193.584% 95.77%;
+  }
+  &--5 {
+    background: url('/assets/images/myPartner-item-4.png');
+    background-position: -74.891px -137.576px;
+    background-size: 196.57% 97.248%;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+  &::before {
+    background-image: linear-gradient(
+      180deg,
+      #1d1a3e 15.51%,
+      rgba(29, 26, 62, 0.73) 27.06%,
+      rgba(29, 26, 62, 0.41) 39.65%,
+      rgba(29, 26, 62, 0) 48.28%
+    );
+  }
+  &::after {
+    background-image: linear-gradient(
+      0deg,
+      #1d1a3e 22.24%,
+      rgba(29, 26, 62, 0.73) 26.32%,
+      rgba(29, 26, 62, 0.41) 36.24%,
+      rgba(29, 26, 62, 0) 44.39%
+    );
+  }
+}

@@ -1,0 +1,129 @@
+.my-partner {
+  &__bg {
+    position: relative;
+    padding-top: $header-height;
+    width: 100%;
+    aspect-ratio: 375/403;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    &::before {
+      background-image: linear-gradient(
+        180deg,
+        #1d1a3e -27.96%,
+        rgba(29, 26, 62, 0.73) -6.26%,
+        rgba(29, 26, 62, 0.41) 17.38%,
+        rgba(29, 26, 62, 0) 36.81%
+      );
+    }
+    &::after {
+      background-image: linear-gradient(
+        0deg,
+        #1d1a3e 0%,
+        rgba(29, 26, 62, 0.73) 19.44%,
+        rgba(29, 26, 62, 0.41) 40.62%,
+        rgba(29, 26, 62, 0) 58.03%
+      );
+    }
+    background-repeat: no-repeat;
+    &--1 {
+      background: url('/assets/images/sleep-partner-card-back.png');
+      background-position: -263.828px -240.046px;
+      background-size: 173.277% 161.238%;
+    }
+    &--2 {
+      background: url('/assets/images/myPartner-item-3.png');
+      background-position: -62.48px -127.106px;
+      background-size: 159.972% 148.857%;
+    }
+    &--3 {
+      background: url('/assets/images/myPartner-bg-1.png');
+      background-position: -136.307px -13px;
+      background-size: 173.173% 112.159%;
+    }
+    &--4 {
+      background: url('/assets/images/myPartner-item-2.png');
+      background-position: -4.149px -366px;
+      background-size: 207.318% 192.914%;
+    }
+    &--5 {
+      background: url('/assets/images/myPartner-item-4.png');
+      background-position: -57.683px -262px;
+      background-size: 178.152% 165.775%;
+    }
+  }
+
+  &__nav {
+    justify-content: center;
+    gap: 2px;
+    .nav-link {
+      color: $grey-200;
+      padding: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 125%; /* 17.5px */
+      &.active {
+        color: $white;
+      }
+    }
+  }
+
+  &__tab-content {
+    padding: 20px 0px 28px 0px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: (0px -1px 0px rgba(255, 255, 255, 0.3));
+
+    &-item {
+      border-radius: 16px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      background-color: $darkBlue-3;
+      opacity: 0.4;
+      background-repeat: no-repeat;
+      transition: opacity 0.3s;
+      border: 1px solid transparent;
+      &--1 {
+        background-position: -39.971px -37.879px;
+        background-size: 158.267% 158.267%;
+      }
+      &--2 {
+        background-position: -14.819px -18.992px;
+        background-size: 170.156% 170.156%;
+      }
+      &--3 {
+        background-position: 50%;
+        background-size: cover;
+      }
+      &--4 {
+        background-position: -3.523px -77.84px;
+        background-size: 213.211% 213.211%;
+      }
+      &--5 {
+        background-position: -10.141px -49.829px;
+        background-size: 178.182% 178.182%;
+      }
+      &.active,
+      &:hover {
+        border-radius: 16px;
+        border: 1px solid $white;
+        opacity: 1;
+        filter: drop-shadow(
+          0px 0px 10px rgba(255, 255, 255, 0.8)
+        ); /* 使用 drop-shadow 來讓 icon 周圍發光 */
+      }
+    }
+  }
+}

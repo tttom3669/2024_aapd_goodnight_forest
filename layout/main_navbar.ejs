@@ -1,0 +1,138 @@
+<div class="main-nav__container">
+  <div class="container">
+    <nav class="main-nav bg-darkBlue-2">
+      <ul class="main-nav_bar">
+        <li class="nav_bar_item <%= (active==='index' ) ? 'nav_bar_choose' : ''%>">
+          <% if(active==='index' ) {%>
+            <a href="./index.html">
+              <span class="nav-icon_block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24"
+                  fill="#F1F0FB">
+                  <path
+                    d="M17 21H7C4.79086 21 3 19.2091 3 17V10.7076C3 9.30887 3.73061 8.01175 4.92679 7.28679L9.92679 4.25649C11.2011 3.48421 12.7989 3.48421 14.0732 4.25649L19.0732 7.28679C20.2694 8.01175 21 9.30887 21 10.7076V17C21 19.2091 19.2091 21 17 21Z"
+                    stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 17H15" stroke="#6A97E8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="nav-text_block">
+                首頁
+              </span>
+            </a>
+            <% } else{%>
+              <a href="./index.html">
+                <span class="nav-icon opacity-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24"
+                    fill="none" opacity="0.5">
+                    <path
+                      d="M17 21H7C4.79086 21 3 19.2091 3 17V10.7076C3 9.30887 3.73061 8.01175 4.92679 7.28679L9.92679 4.25649C11.2011 3.48421 12.7989 3.48421 14.0732 4.25649L19.0732 7.28679C20.2694 8.01175 21 9.30887 21 10.7076V17C21 19.2091 19.2091 21 17 21Z"
+                      stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 17H15" stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="nav-text">
+                  首頁
+                </span>
+              </a>
+              <% }%>
+        </li>
+        <li class="nav_bar_item <%= (active==='report' ) ? 'nav_bar_choose' : ''%>">
+          <% if(active==='report' ) {%>
+            <a href="./sleep-report.html">
+              <span class="nav-icon_block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.2428 4.73768C15.2428 6.95868 17.0459 8.75915 19.2702 8.75915C19.5151 8.75794 19.7594 8.73443 20 8.6889V16.6616C20 20.0157 18.0215 22.0001 14.6624 22.0001H7.34636C3.97851 22.0001 2 20.0157 2 16.6616V9.35622C2 6.00207 3.97851 4.00012 7.34636 4.00012H15.3131C15.2659 4.24313 15.2423 4.49014 15.2428 4.73768ZM13.15 14.8967L16.0078 11.2089V11.1913C16.2525 10.8626 16.1901 10.399 15.8671 10.1465C15.7108 10.0258 15.5122 9.97358 15.3167 10.0017C15.1211 10.0298 14.9453 10.1359 14.8295 10.2957L12.4201 13.3952L9.6766 11.2352C9.51997 11.1132 9.32071 11.0593 9.12381 11.0858C8.92691 11.1122 8.74898 11.2167 8.63019 11.3757L5.67562 15.1865C5.57177 15.3159 5.51586 15.4772 5.51734 15.643C5.5002 15.9783 5.71187 16.2828 6.03238 16.3839C6.35288 16.4851 6.70138 16.3574 6.88031 16.0733L9.35125 12.8772L12.0948 15.0284C12.2508 15.1542 12.4514 15.2113 12.6504 15.1864C12.8494 15.1616 13.0297 15.057 13.15 14.8967Z"
+                    fill="#F1F0FB" />
+                  <circle opacity="1" cx="19.5" cy="4.50012" r="2.5" fill="#F1F0FB" />
+                </svg>
+              </span>
+              <span class="nav-text_block">
+                睡眠報告
+              </span>
+            </a>
+            <% } else{%>
+              <a href="./sleep-report.html">
+                <span class="nav-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                    opacity="0.5">
+                    <g stroke="#F1F0FB" stroke-width="1.5">
+                      <path d="m22 9v8c0 2.7614-2.2386 5-5 5h-10c-2.76142 0-5-2.2386-5-5v-10c0-2.76142 2.23858-5 5-5h9"
+                        stroke-linecap="round" />
+                      <circle r="2" transform="matrix(-1 0 0 1 21 4)" />
+                      <path d="m7 14.75 3.5-4 3 2.5 3.5-4" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+                </span>
+                <span class="nav-text">
+                  睡眠報告
+                </span>
+              </a>
+              <% }%>
+        </li>
+        <li class="nav_bar_item <%= (active==='health' ) ? 'nav_bar_choose' : ''%>">
+          <% if(active==='health' ) {%>
+            <a href="./sleep-healthroom.html">
+              <span class="nav-icon_block">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path stroke="#F1F0FB" fill="#F1F0FB"
+                    d="m14 11h-1v-1a1 1 0 0 0 -2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2zm6.16-6a6.29 6.29 0 0 0 -8.16-.59 6.27 6.27 0 0 0 -8.16 9.48l6 6.05a3 3 0 0 0 4.24 0l6-6.05a6.27 6.27 0 0 0 .08-8.89zm-1.41 7.46-6 6a1 1 0 0 1 -1.42 0l-6-6a4.29 4.29 0 0 1 0-6 4.27 4.27 0 0 1 6 0 1 1 0 0 0 1.42 0 4.27 4.27 0 0 1 6 0 4.29 4.29 0 0 1 0 6.02z" />
+                </svg>
+              </span>
+              <span class="nav-text_block">
+                睡眠保健室
+              </span>
+            </a>
+            <% } else{%>
+              <a href="./sleep-healthroom.html">
+                <span class="nav-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" opacity="0.5">
+                    <path stroke="#F1F0FB" fill="#F1F0FB"
+                      d="m14 11h-1v-1a1 1 0 0 0 -2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2zm6.16-6a6.29 6.29 0 0 0 -8.16-.59 6.27 6.27 0 0 0 -8.16 9.48l6 6.05a3 3 0 0 0 4.24 0l6-6.05a6.27 6.27 0 0 0 .08-8.89zm-1.41 7.46-6 6a1 1 0 0 1 -1.42 0l-6-6a4.29 4.29 0 0 1 0-6 4.27 4.27 0 0 1 6 0 1 1 0 0 0 1.42 0 4.27 4.27 0 0 1 6 0 4.29 4.29 0 0 1 0 6.02z" />
+                  </svg>
+                </span>
+                <span class="nav-text">
+                  睡眠保健室
+                </span>
+              </a>
+              <% }%>
+        </li>
+        <li class="nav_bar_item <%= (active==='profile' ) ? 'nav_bar_choose' : ''%>">
+          <% if(active==='profile' ) {%>
+            <a href="./membership.html">
+              <span class="nav-icon_block">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#F1F0FB" height="24" viewBox="0 0 24 24" width="24">
+                  <g stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                    <path
+                      d="m12.1601 10.87c-.1-.01-.22-.01-.33 0-2.38004-.08-4.27004-2.03-4.27004-4.43 0-2.45 1.98-4.44 4.44004-4.44 2.45 0 4.44 1.99 4.44 4.44-.01 2.4-1.9 4.35-4.28 4.43z" />
+                    <path
+                      d="m7.15997 14.56c-2.42 1.62-2.42 4.26 0 5.87 2.75 1.84 7.26003 1.84 10.01003 0 2.42-1.62 2.42-4.26 0-5.87-2.74-1.83-7.25003-1.83-10.01003 0z" />
+                  </g>
+                </svg>
+              </span>
+              <span class="nav-text_block">
+                我的頁面
+              </span>
+            </a>
+            <% } else{%>
+              <a href="./membership.html">
+                <span class="nav-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                    opacity="0.5">
+                    <g stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                      <path
+                        d="m12.1601 10.87c-.1-.01-.22-.01-.33 0-2.38004-.08-4.27004-2.03-4.27004-4.43 0-2.45 1.98-4.44 4.44004-4.44 2.45 0 4.44 1.99 4.44 4.44-.01 2.4-1.9 4.35-4.28 4.43z" />
+                      <path
+                        d="m7.15997 14.56c-2.42 1.62-2.42 4.26 0 5.87 2.75 1.84 7.26003 1.84 10.01003 0 2.42-1.62 2.42-4.26 0-5.87-2.74-1.83-7.25003-1.83-10.01003 0z" />
+                    </g>
+                  </svg>
+                </span>
+                <span class="nav-text">
+                  我的頁面
+                </span>
+              </a>
+              <% }%>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

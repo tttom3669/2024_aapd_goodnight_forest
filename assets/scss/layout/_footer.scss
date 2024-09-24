@@ -1,4 +1,16 @@
-// .footer{
-//   background: #69F0AE;
-//   font-size: 64px;
-// }
+.footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  height: 21px;
+  z-index: 100;
+  &__bar {
+    background-color: $white;
+    width: 139px;
+    height: 5px;
+    border-radius: 100px;
+  }
+}

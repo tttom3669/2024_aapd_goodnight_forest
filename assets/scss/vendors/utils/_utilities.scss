@@ -253,6 +253,8 @@ $utilities: map-merge(
         75: 75%,
         100: 100%,
         auto: auto,
+        dvh: 100dvh,
+        // cus*
       ),
     ),
     'max-height': (
@@ -586,10 +588,10 @@ $utilities: map-merge(
         ),
       ),
     'font-size': (
-      rfs: true,
+      // rfs: true, //cus*
       property: font-size,
       class: fs,
-      values: $font-sizes,
+      values: $font-sizes
     ),
     'font-style': (
       property: font-style,
@@ -818,82 +820,88 @@ $utilities: map-merge(
       values: none auto,
     ),
     // scss-docs-end utils-interaction
-    // scss-docs-start utils-border-radius
+    // scss-docs-start utils-border-radius\
+    // cus*
     'rounded':
       (
         property: border-radius,
         class: rounded,
-        values: (
-          null: var(--#{$prefix}border-radius),
-          0: 0,
-          1: var(--#{$prefix}border-radius-sm),
-          2: var(--#{$prefix}border-radius),
-          3: var(--#{$prefix}border-radius-lg),
-          4: var(--#{$prefix}border-radius-xl),
-          5: var(--#{$prefix}border-radius-xxl),
-          circle: 50%,
-          pill: var(--#{$prefix}border-radius-pill),
-        ),
+        // values: (
+        //   null: var(--#{$prefix}border-radius),
+        //   0: 0,
+        //   1: var(--#{$prefix}border-radius-sm),
+        //   2: var(--#{$prefix}border-radius),
+        //   3: var(--#{$prefix}border-radius-lg),
+        //   4: var(--#{$prefix}border-radius-xl),
+        //   5: var(--#{$prefix}border-radius-xxl),
+        //   circle: 50%,
+        //   pill: var(--#{$prefix}border-radius-pill),
+        // ),
+        values: $rounded-values,
       ),
     'rounded-top': (
       property: border-top-left-radius border-top-right-radius,
       class: rounded-top,
-      values: (
-        null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
-        circle: 50%,
-        pill: var(--#{$prefix}border-radius-pill),
-      ),
+      // values: (
+      //   null: var(--#{$prefix}border-radius),
+      //   0: 0,
+      //   1: var(--#{$prefix}border-radius-sm),
+      //   2: var(--#{$prefix}border-radius),
+      //   3: var(--#{$prefix}border-radius-lg),
+      //   4: var(--#{$prefix}border-radius-xl),
+      //   5: var(--#{$prefix}border-radius-xxl),
+      //   circle: 50%,
+      //   pill: var(--#{$prefix}border-radius-pill),
+      // ),
+      values: $rounded-values,
     ),
     'rounded-end': (
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
-      values: (
-        null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
-        circle: 50%,
-        pill: var(--#{$prefix}border-radius-pill),
-      ),
+      // values: (
+      //   null: var(--#{$prefix}border-radius),
+      //   0: 0,
+      //   1: var(--#{$prefix}border-radius-sm),
+      //   2: var(--#{$prefix}border-radius),
+      //   3: var(--#{$prefix}border-radius-lg),
+      //   4: var(--#{$prefix}border-radius-xl),
+      //   5: var(--#{$prefix}border-radius-xxl),
+      //   circle: 50%,
+      //   pill: var(--#{$prefix}border-radius-pill),
+      // ),
+      values: $rounded-values,
     ),
     'rounded-bottom': (
       property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded-bottom,
-      values: (
-        null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
-        circle: 50%,
-        pill: var(--#{$prefix}border-radius-pill),
-      ),
+      // values: (
+      //   null: var(--#{$prefix}border-radius),
+      //   0: 0,
+      //   1: var(--#{$prefix}border-radius-sm),
+      //   2: var(--#{$prefix}border-radius),
+      //   3: var(--#{$prefix}border-radius-lg),
+      //   4: var(--#{$prefix}border-radius-xl),
+      //   5: var(--#{$prefix}border-radius-xxl),
+      //   circle: 50%,
+      //   pill: var(--#{$prefix}border-radius-pill),
+      // ),
+      values: $rounded-values,
     ),
     'rounded-start': (
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded-start,
-      values: (
-        null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
-        circle: 50%,
-        pill: var(--#{$prefix}border-radius-pill),
-      ),
+      // values: (
+      //   null: var(--#{$prefix}border-radius),
+      //   0: 0,
+      //   1: var(--#{$prefix}border-radius-sm),
+      //   2: var(--#{$prefix}border-radius),
+      //   3: var(--#{$prefix}border-radius-lg),
+      //   4: var(--#{$prefix}border-radius-xl),
+      //   5: var(--#{$prefix}border-radius-xxl),
+      //   circle: 50%,
+      //   pill: var(--#{$prefix}border-radius-pill),
+      // ),
+      values: $rounded-values,
     ),
     // scss-docs-end utils-border-radius
     // scss-docs-start utils-visibility
@@ -913,8 +921,33 @@ $utilities: map-merge(
         property: z-index,
         class: z,
         values: $zindex-levels,
-      )
-      // scss-docs-end utils-zindex
+      ),
+    // scss-docs-end utils-zindex
+    // scss-docs-end utils-visibility
+    // cus*
+    'bg-repeat':
+      (
+        property: background-repeat,
+        class: bg,
+        values: (
+          no-repeat: no-repeat,
+        ),
+      ),
+    'bg-size': (
+      property: background-size,
+      class: bg,
+      values: (
+        cover: cover,
+        contain: contain,
+      ),
+    ),
+    'bg-position': (
+      property: background-position,
+      class: bg,
+      values: (
+        center: center,
+      ),
+    )
   ),
   $utilities
 );
