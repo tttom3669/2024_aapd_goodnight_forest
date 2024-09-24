@@ -33,24 +33,24 @@
 }
 
 // -----
-.nav .nav-tabs {
+.nav .nav-article {
   width: 50%;
 
 }
-.nav-tabs {
+.nav-article {
   border: transparent;
 }
-.nav-item {
+.nav-article-item {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-link {
+.nav-link-home {
   padding: 0px;
   margin: 0px;
 }
-.nav-tabs .nav-link {
+.nav-article .nav-link-home {
   position: relative;
   color: white;
   border:  transparent;
@@ -61,7 +61,7 @@
   transform-style: preserve-3d; /* 保持 3D 效果 */
   transform: rotateY(0deg); /* 水平翻轉 */
 }
-.nav-tabs .nav-link.active {
+.nav-article .nav-link-home.active {
   transition: color 0.5s ease, border-radius 0.5s ease;
   width: 100%;
   color: $grey-50;
@@ -70,7 +70,7 @@
   padding: 6px 22px;
   transform: rotateY(0deg); /* 水平翻轉效果 */
 }
-.nav-tabs .nav-link::before {
+.nav-article .nav-link-home::before {
   content: '';
   position: absolute;
   top: 0;
@@ -86,7 +86,7 @@
 }
 
 /* 翻轉推薦文章樣式 */
-.nav-tabs .nav-link.active-home::before {
+.nav-article .nav-link-home.active-home::before {
   transform: scaleX(1); /* 顯示出背景 */
   transform-origin: right;
   background-color: #1d1a3e; /* 背景色 */
@@ -95,7 +95,7 @@
 }
 
 /* 翻轉線上醫生樣式 */
-.nav-tabs .nav-link.active-profile::before {
+.nav-article .nav-link-home.active-profile::before {
   transform: scaleX(1);
   transform-origin: left;
   background-color: #1d1a3e;
