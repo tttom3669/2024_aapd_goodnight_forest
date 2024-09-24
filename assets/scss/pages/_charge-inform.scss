@@ -1,0 +1,95 @@
+.bg-relative {
+  position: relative;
+  object-fit: cover;
+  width: 375px;
+  height: 538px;
+
+}
+.bg-charge-inform {
+  position: absolute;
+  top: -30%;
+  left: -45%;
+  width: 150%;
+  height: 150%;
+  background-image:  linear-gradient(
+    to top,
+    rgba(29, 26, 62, 1),
+    rgba(29, 26, 62, 0.73),
+    rgba(29, 26, 62, 0.41),
+    rgba(29, 26, 62, 0) 
+  ),
+    url('/assets/images/charge-inform-bg.png');
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.charge-title {
+  margin-top: 28px;
+  margin-bottom: 32px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.charge-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  .charge-inform {
+    width: 311px;
+    height: 317px;
+    border-radius: 16px;
+  }
+}
+.form-custom-checkbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.custom-checkbox {
+  appearance: none; /* 移除預設样式 */
+  width: 20px; 
+  height: 20px; 
+  border-radius: 6px; 
+  background-color: #6c757d; 
+  position: relative;
+  margin-left: 32px;
+}
+.custom-checkbox:checked {
+  background-color: $primary; 
+}
+.custom-checkbox:checked::before {
+  content: ''; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: $primary;  
+  border-radius: 6px; 
+}
+.custom-checkbox:checked::after {
+  content: ''; 
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 9px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.custom-checkbox-text {
+  color: $white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.5px;
+  margin-left: 20px;
+}
