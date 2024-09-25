@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>睡眠報告頁面</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script type="module" crossorigin src="/2024_aapd_goodnight_forest/assets/main-0b6264fd.js"></script>
-  <link rel="stylesheet" href="/2024_aapd_goodnight_forest/assets/main-64634af5.css">
+  <script type="module" crossorigin src="/2024_aapd_goodnight_forest/assets/main-aaf4db36.js"></script>
+  <link rel="stylesheet" href="/2024_aapd_goodnight_forest/assets/main-b65099dc.css">
 </head>
 
 <body>
@@ -90,7 +90,7 @@
 
     <section>
       <div class="container">
-        <ul class="d-flex align-items-center progress-bg py-3  px-4">
+        <ul class="d-flex justify-content-center align-items-center progress-bg py-3 px-4">
           <li class="d-flex justify-content-start align-items-center">
             <div class="me-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none">
@@ -106,8 +106,8 @@
                   stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div>
-              <span class="text-white fs-sm fw-medium lh-sm mb-1">8小時10分鐘</span>
+            <div class="d-flex flex-column">
+              <span class="text-white fs-sm fw-medium lh-sm mb-1 ">8小時10分鐘</span>
               <span class="fs-xs text-grey-50 fw-normal clock-lh-text">床上時間</span>
             </div>
           </li>
@@ -122,7 +122,7 @@
                   stroke-linejoin="round" />
               </svg>
             </div>
-            <div>
+            <div class="d-flex flex-column">
               <span class="text-white fs-sm fw-medium lh-sm mb-1">7小時10分鐘</span>
               <span class="fs-xs text-grey-50 fw-normal clock-lh-text">入眠時間</span>
             </div>
@@ -372,47 +372,44 @@
   <div class="container">
     <nav class="main-nav bg-darkBlue-2">
       <ul class="main-nav_bar">
+        <li class="nav_bar_item ">
+          
+              <a href="./index.html">
+                <span class="nav-icon opacity-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24"
+                    fill="none" opacity="0.5">
+                    <path
+                      d="M17 21H7C4.79086 21 3 19.2091 3 17V10.7076C3 9.30887 3.73061 8.01175 4.92679 7.28679L9.92679 4.25649C11.2011 3.48421 12.7989 3.48421 14.0732 4.25649L19.0732 7.28679C20.2694 8.01175 21 9.30887 21 10.7076V17C21 19.2091 19.2091 21 17 21Z"
+                      stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 17H15" stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="nav-text">
+                  首頁
+                </span>
+              </a>
+              
+        </li>
         <li class="nav_bar_item nav_bar_choose">
           
-            <a href="./index.html">
+            <a href="./sleep-report.html">
               <span class="nav-icon_block">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24"
-                  fill="#F1F0FB">
-                  <path
-                    d="M17 21H7C4.79086 21 3 19.2091 3 17V10.7076C3 9.30887 3.73061 8.01175 4.92679 7.28679L9.92679 4.25649C11.2011 3.48421 12.7989 3.48421 14.0732 4.25649L19.0732 7.28679C20.2694 8.01175 21 9.30887 21 10.7076V17C21 19.2091 19.2091 21 17 21Z"
-                    stroke="#F1F0FB" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M9 17H15" stroke="#6A97E8" stroke-linecap="round" stroke-linejoin="round" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.2428 4.73768C15.2428 6.95868 17.0459 8.75915 19.2702 8.75915C19.5151 8.75794 19.7594 8.73443 20 8.6889V16.6616C20 20.0157 18.0215 22.0001 14.6624 22.0001H7.34636C3.97851 22.0001 2 20.0157 2 16.6616V9.35622C2 6.00207 3.97851 4.00012 7.34636 4.00012H15.3131C15.2659 4.24313 15.2423 4.49014 15.2428 4.73768ZM13.15 14.8967L16.0078 11.2089V11.1913C16.2525 10.8626 16.1901 10.399 15.8671 10.1465C15.7108 10.0258 15.5122 9.97358 15.3167 10.0017C15.1211 10.0298 14.9453 10.1359 14.8295 10.2957L12.4201 13.3952L9.6766 11.2352C9.51997 11.1132 9.32071 11.0593 9.12381 11.0858C8.92691 11.1122 8.74898 11.2167 8.63019 11.3757L5.67562 15.1865C5.57177 15.3159 5.51586 15.4772 5.51734 15.643C5.5002 15.9783 5.71187 16.2828 6.03238 16.3839C6.35288 16.4851 6.70138 16.3574 6.88031 16.0733L9.35125 12.8772L12.0948 15.0284C12.2508 15.1542 12.4514 15.2113 12.6504 15.1864C12.8494 15.1616 13.0297 15.057 13.15 14.8967Z"
+                    fill="#F1F0FB" />
+                  <circle opacity="1" cx="19.5" cy="4.50012" r="2.5" fill="#F1F0FB" />
                 </svg>
               </span>
               <span class="nav-text_block">
-                首頁
+                睡眠報告
               </span>
             </a>
             
         </li>
         <li class="nav_bar_item ">
           
-              <a href="./sleep-report.html">
-                <span class="nav-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24"
-                    opacity="0.5">
-                    <g stroke="#F1F0FB" stroke-width="1.5">
-                      <path d="m22 9v8c0 2.7614-2.2386 5-5 5h-10c-2.76142 0-5-2.2386-5-5v-10c0-2.76142 2.23858-5 5-5h9"
-                        stroke-linecap="round" />
-                      <circle r="2" transform="matrix(-1 0 0 1 21 4)" />
-                      <path d="m7 14.75 3.5-4 3 2.5 3.5-4" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                  </svg>
-                </span>
-                <span class="nav-text">
-                  睡眠報告
-                </span>
-              </a>
-              
-        </li>
-        <li class="nav_bar_item ">
-          
-              <a href="./health.html">
+              <a href="./sleep-healthroom.html">
                 <span class="nav-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" opacity="0.5">
                     <path stroke="#F1F0FB" fill="#F1F0FB"
