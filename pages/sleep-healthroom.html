@@ -38,155 +38,152 @@
     
     <ul class="nav nav-tabs nav-article" id="myTab" role="tablist">
       <li class="nav-item nav-article-item" role="presentation">
-        <button class="nav-link nav-link-home active active-home" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">推薦文章</button>
+        <button class="nav-link active active-home nav-link-home" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">推薦文章</button>
       </li>
       <li class="nav-item nav-article-item" role="presentation">
-        <button class="nav-link nav-link-home" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">線上醫生</button>
+        <button class="nav-link nav-link-profile active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">線上醫生</button>
       </li>
     </ul>
-    <div class="tab-content" id="myTabContent">
+    <div class="tab-content profile-zindex" id="myTabContent">
       <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-      <!-- 最新文章 -->
-      <div class="container bg-darkBlue-1 pt-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2 class="fs-base text-white lh-sm fw-bold py-3">最新文章</h2>
-          <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
-            看更多
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
-                <path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </span>
-          </a>
+        <!-- 最新文章 -->
+        <div class="container pt-3 ">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fs-base text-white lh-sm fw-bold py-3">最新文章</h2>
+            <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
+              看更多
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                  <path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
-      </div>
-      
-      <div class="article-new mb-4">
-        <div class="article-overflow">
-          <ul class="d-flex gap-3">
-            <li>
-              <div class="article-new-seven">
-                <div class="article-new-text">
-                  <p class="text-white fs-sm fw-bold lh-sm mb-1">呼吸中止症的治療</p>
-                  <p class="fs-xxs lh-base fw-normal text-grey-50 article-content">探討常見的失眠原因，如壓力、生活習慣</p>
+        <div class="article-new mb-4 ">
+          <div class="article-overflow ">
+            <ul class="d-flex gap-3">
+              <li>
+                <div class="article-new-seven">
+                  <div class="article-new-text">
+                    <p class="text-white fs-sm fw-bold lh-sm mb-1">呼吸中止症的治療</p>
+                    <p class="fs-xxs lh-base fw-normal text-grey-50 article-content">探討常見的失眠原因，如壓力、生活習慣</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="article-new-eight">
-                <div class="article-new-text">
-                  <p class="text-white fs-sm fw-bold lh-sm mb-1">輪班工作睡眠問題</p>
-                  <p class="fs-xxs lh-base fw-normal text-grey-50 article-content">輪班工作者常如調整作息時間</p>
+              </li>
+              <li>
+                <div class="article-new-eight">
+                  <div class="article-new-text">
+                    <p class="text-white fs-sm fw-bold lh-sm mb-1">輪班工作睡眠問題</p>
+                    <p class="fs-xxs lh-base fw-normal text-grey-50 article-content">輪班工作者常如調整作息時間</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="article-new-nine">
-                <div class="article-new-text">
-                  <p class="text-white fs-sm fw-bold lh-sm mb-1">為什麼會睡不著?</p>
-                  <p class="fs-xxs lh-base fw-normal text-grey-50 article-content">心理諮商師從失眠了解你的心理焦慮</p>
+              </li>
+              <li>
+                <div class="article-new-nine">
+                  <div class="article-new-text">
+                    <p class="text-white fs-sm fw-bold lh-sm mb-1">為什麼會睡不著?</p>
+                    <p class="fs-xxs lh-base fw-normal text-grey-50 article-content">心理諮商師從失眠了解你的心理焦慮</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <!-- 收藏文章 -->
-      <div class="container bg-darkBlue-1">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2 class="fs-base text-white lh-sm fw-bold py-3">收藏文章</h2>
-          <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
-            看更多
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
-                <path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <div class="article-box mb-4">
-        <div class="article">
-          <ul class="d-flex gap-3">
-            <a href="#">
-              <li>
-                <img class="article-img mb-2" src="/assets/images/article-1.png" alt="">
-                <p class="mb-1 text-white fs-sm lh-sm fw-medium">失眠的原因與對策</p>
-                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">探討常見的失眠原因，如壓力、生活習慣</p>
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                <img class="article-img mb-2" src="/assets/images/article-2.png" alt="">
-                <p class="mb-1 text-white fs-sm lh-sm fw-medium">睡眠與精神健康</p>
-                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">睡眠是維持身體和心理健康的關鍵。長庚醫院</p>
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                <img class="article-img mb-2" src="/assets/images/article-3.png" alt="">
-                <p class="mb-1 text-white fs-sm lh-sm fw-medium">健康睡眠習慣</p>
-                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">
-                  評估智能手機、穿戴裝置和應用程式如何影響睡眠質量，以及如何使用這些科技來改善睡眠。</p>
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 熱門文章 -->
-      <div class="container bg-darkBlue-1">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2 class="fs-base text-white lh-sm fw-bold py-3">熱門文章</h2>
-          <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
-            看更多
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
-                <path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <div class="article-box">
-        <div class="article">
-          <ul class="d-flex gap-3">
-            <a href="#">
-              <li>
-                <img class="article-img mb-2" src="/assets/images/article-4.png" alt="">
-                <p class="mb-1 text-white fs-sm lh-sm fw-medium">睡眠不足的影響</p>
-                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">輪班工作者常如調整作息時間、營養建議和環境調整等。</p>
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                <img class="article-img mb-2" src="/assets/images/article-5.png" alt="">
-                <p class="mb-1 text-white fs-sm lh-sm fw-medium">科技與睡眠</p>
-                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">評估智能手機、穿戴裝置和應用程式如何影響睡眠質量，以及如何使用這些科技來改善睡眠。</p>
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                <img class="article-img mb-2" src="/assets/images/article-6.png" alt="">
-                <p class="mb-1 text-white fs-sm lh-sm fw-medium">自然療法改善睡眠</p>
-                <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">
-                  溫熱的草藥茶，香薰擴香器散發著薰衣草精油的香氣，進行溫水泡腳</p>
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
-
         
+        <!-- 收藏文章 -->
+        <div class="container ">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fs-base text-white lh-sm fw-bold py-3">收藏文章</h2>
+            <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
+              看更多
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                  <path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="article-box mb-4 ">
+          <div class="article">
+            <ul class="d-flex gap-3">
+              <a href="#">
+                <li>
+                  <img class="article-img mb-2" src="/assets/images/article-1.png" alt="">
+                  <p class="mb-1 text-white fs-sm lh-sm fw-medium">失眠的原因與對策</p>
+                  <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">探討常見的失眠原因，如壓力、生活習慣</p>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <img class="article-img mb-2" src="/assets/images/article-2.png" alt="">
+                  <p class="mb-1 text-white fs-sm lh-sm fw-medium">睡眠與精神健康</p>
+                  <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">睡眠是維持身體和心理健康的關鍵。長庚醫院</p>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <img class="article-img mb-2" src="/assets/images/article-3.png" alt="">
+                  <p class="mb-1 text-white fs-sm lh-sm fw-medium">健康睡眠習慣</p>
+                  <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">
+                    評估智能手機、穿戴裝置和應用程式如何影響睡眠質量，以及如何使用這些科技來改善睡眠。</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 熱門文章 -->
+        <div class="container ">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fs-base text-white lh-sm fw-bold py-3">熱門文章</h2>
+            <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
+              看更多
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                  <path d="M19 12L31 24L19 36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="article-box ">
+          <div class="article">
+            <ul class="d-flex gap-3">
+              <a href="#">
+                <li>
+                  <img class="article-img mb-2" src="/assets/images/article-4.png" alt="">
+                  <p class="mb-1 text-white fs-sm lh-sm fw-medium">睡眠不足的影響</p>
+                  <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">輪班工作者常如調整作息時間、營養建議和環境調整等。</p>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <img class="article-img mb-2" src="/assets/images/article-5.png" alt="">
+                  <p class="mb-1 text-white fs-sm lh-sm fw-medium">科技與睡眠</p>
+                  <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">評估智能手機、穿戴裝置和應用程式如何影響睡眠質量，以及如何使用這些科技來改善睡眠。</p>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <img class="article-img mb-2" src="/assets/images/article-6.png" alt="">
+                  <p class="mb-1 text-white fs-sm lh-sm fw-medium">自然療法改善睡眠</p>
+                  <p class="article-content text-grey-50 fs-xxs fw-normal lh-base">
+                    溫熱的草藥茶，香薰擴香器散發著薰衣草精油的香氣，進行溫水泡腳</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-        <div class="container bg-darkBlue-1 pt-3">
+        <div class="container  pt-3 profile-zindex">
           <div class="d-flex justify-content-between align-items-center">
             <h2 class="fs-base text-white lh-sm fw-bold py-3">日期選擇</h2>
             <a href="#" class="fs-xs fw-medium text-white lh-sm d-flex align-items-center me-1">
