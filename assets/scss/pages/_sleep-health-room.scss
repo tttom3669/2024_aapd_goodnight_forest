@@ -31,11 +31,10 @@
   top: 25%;
   right: 10%;
 }
+//------
 
-// -----
 .nav .nav-article {
-  width: 50%;
-
+  width: 100%;
 }
 .nav-article {
   border: transparent;
@@ -46,63 +45,104 @@
   justify-content: center;
   align-items: center;
 }
-.nav-link-home {
+.nav-article .nav-link-home,
+.nav-article .nav-link-profile {
   padding: 0px;
   margin: 0px;
+  color: $white;
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  border: transparent;
+  position: relative;
+  z-index: 1; 
+  pointer-events: all; /* 可以不擋住可正常點選*/
+}
+.nav-article .nav-link-home.active,
+.nav-article .nav-link-profile.active { 
+  position: relative;
+  transition: color 0.8s ease;
+  width: 100%;
+  color: $grey-50;
+  background: transparent;
+  background-color: transparent;
+  padding: 6px 22px;
+  transform: rotateY(0deg); /* 水平翻轉效果 */
 }
 .nav-article .nav-link-home {
   position: relative;
   color: white;
-  border:  transparent;
-  border-color:  transparent;
-  background: transparent;
   padding: 6px 22px;
-  transition: transform 0.8s ease, color 0.5s ease, background-color 0.5s ease;
+  transition: transform 0.8s ease;
   transform-style: preserve-3d; /* 保持 3D 效果 */
   transform: rotateY(0deg); /* 水平翻轉 */
 }
-.nav-article .nav-link-home.active {
-  transition: color 0.5s ease, border-radius 0.5s ease;
-  width: 100%;
-  color: $grey-50;
-  background-color: transparent;
-  border-radius: 0px 40px 0px 0px;
+.nav-article .nav-link-profile {
+  position: relative;
+  color: white;
   padding: 6px 22px;
-  transform: rotateY(0deg); /* 水平翻轉效果 */
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d; /* 保持 3D 效果 */
+  transform: rotateY(0deg); /* 水平翻轉 */
 }
-.nav-article .nav-link-home::before {
+.nav-article .nav-link-home::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  color: $grey-50;
   background-color: transparent; /* 背景透明 */
-  border-radius: 40px 0px 0px 0px; /* 預設圆角 */
   z-index: -1;
   transform: scaleX(0); /* 預設隐藏背景 */
   transform-origin: left;
-  transition: transform 0.8s ease, border-radius 0.5s ease, background-color 0.5s ease;
+  transition: transform 0.8s ease;
+  background-size: cover;
+  pointer-events: none; /* 讓背景不擋住 */
 }
-
+.nav-article .nav-link-profile::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $grey-50;
+  background-color: transparent; /* 背景透明 */
+  z-index: -1;
+  transform: scaleX(0); /* 預設隐藏背景 */
+  transform-origin: right;
+  transition: transform 0.8s ease;
+  background-size: cover;
+  pointer-events: none; /* 讓背景不擋住 */
+}
+.nav-article .nav-link-home.active-home,
+.nav-article .nav-link-profile.active-profile {
+  z-index: 2;
+  pointer-events: all;  /* 可以不擋住可正常點選*/
+}
 /* 翻轉推薦文章樣式 */
-.nav-article .nav-link-home.active-home::before {
+.nav-article .nav-link-home.active-home::after {
   transform: scaleX(1); /* 顯示出背景 */
   transform-origin: right;
-  background-color: #1d1a3e; /* 背景色 */
-  border-radius: 0px 40px 0px 0px;
-  transition: transform 0.8s ease; /* 翻轉動畫效果 */
+  background: url("/assets/images/sleep-health-home.png") no-repeat;
+  width: 375px;
+  height: 694px;
+  z-index: -1;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
 /* 翻轉線上醫生樣式 */
-.nav-article .nav-link-home.active-profile::before {
+.nav-article .nav-link-profile.active-profile::after {
   transform: scaleX(1);
   transform-origin: left;
-  background-color: #1d1a3e;
-  border-radius: 40px 0px 0px 0px;
-  transition: transform 0.8s ease; /* 翻轉動畫效果 */
+  background: url("/assets/images/sleep-health-profile.png") no-repeat;
+  width: 375px;
+  height: 694px;
+  z-index: -1;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
-
+.profile-zindex {
+  position: relative;
+  z-index: 3;
+}
 // -----
 .article-new-seven {
   background: url("/assets/images/article-7.png") no-repeat;
@@ -147,7 +187,7 @@
     scrollbar-width: none;
     .article-new-text {
       border-radius: 0px 0px 16px 16px;
-      background: rgba(29, 26, 62, 0.4);
+      // background: rgba(29, 26, 62, 0.4);
       backdrop-filter: blur(10px);
       padding: 10px 12px;
     }
