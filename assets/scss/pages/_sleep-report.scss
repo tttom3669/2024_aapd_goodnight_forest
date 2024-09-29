@@ -1,5 +1,10 @@
 @import './index';
-
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 .progress-bg {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -20,7 +25,7 @@
   padding-bottom: 12px;
   border-radius: 16px;
   margin-bottom: 24px;
-  background:rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.03);
 }
 .status-round-awake {
   width: 8px;
@@ -33,7 +38,7 @@
   display: none;
 }
 .chart-report:hover {
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   .interrupt-hint-line {
     width: 2px;
@@ -62,7 +67,7 @@
   }
 }
 .detailed-item {
-  background:rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   padding: 16px 16px 16px 16px;
   .detailed-status {
@@ -80,14 +85,14 @@
   }
 }
 .detailed-item:active {
-  border: 1px solid rgba(212,227,255,1);
+  border: 1px solid rgba(212, 227, 255, 1);
 }
 .article-box {
-  margin-left: 24px;
   width: auto;
-  overflow: visible !important;
+  overflow: hidden;
 }
 .article {
+  padding-left: 24px;
   width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
@@ -111,23 +116,28 @@
   .dashboard-circle {
     width: 214px;
     height: 214px;
-    background: conic-gradient(rgba(217,217,217,1) 0% 43%,$darkBlue-1 43% 57%,$danger-1 57% 65%, rgba(217,217,217,1) 65% 100%);
+    background: conic-gradient(
+      rgba(217, 217, 217, 1) 0% 43%,
+      $darkBlue-1 43% 57%,
+      $danger-1 57% 65%,
+      rgba(217, 217, 217, 1) 65% 100%
+    );
     border-radius: 50%;
     position: relative;
   }
   .dashboard-circle::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 8%;
     left: 8%;
     width: 180px;
     height: 180px;
-    background-color: $darkBlue-1; 
+    background-color: $darkBlue-1;
     border-radius: 50%;
     z-index: 2;
   }
   .dashboard-circle-line {
-    background: url("/assets/images/dashboard-circle-line.png") no-repeat;
+    background: url('/assets/images/dashboard-circle-line.png') no-repeat;
     background-size: cover;
     width: 170px;
     height: 160px;
@@ -143,7 +153,7 @@
     left: 66%;
     width: 17px;
     height: 17px;
-    background-color: rgba(217,217,217,1);
+    background-color: rgba(217, 217, 217, 1);
     border-radius: 50%;
     z-index: 1;
   }
@@ -153,7 +163,7 @@
     left: 26%;
     width: 17px;
     height: 17px;
-    background-color: $danger-1; 
+    background-color: $danger-1;
     border-radius: 50%;
     z-index: 1;
   }
@@ -181,6 +191,6 @@
     bottom: 0;
     left: 41%;
     z-index: 4;
-    filter: drop-shadow(0px 0px 24px rgba(214, 208, 245, 0.8))
+    filter: drop-shadow(0px 0px 24px rgba(214, 208, 245, 0.8));
   }
 }

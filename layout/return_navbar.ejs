@@ -1,46 +1,64 @@
 <nav class="position-relative z-2 px-2 d-flex align-items-center justify-content-between gap-2">
-  <a href="<%= lastPage %>" class="p-2.5" data-id="return-link">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M15.5 19.0001L8.5 12.0001L15.5 5.00012" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
-        stroke-linejoin="round" />
-    </svg>
-  </a>
-  <% if(title !=='' ) {%>
-    <h1 class="fs-base fw-bold text-white">
-      <%= title %>
-    </h1>
-    <% } %>
-      <% if(iconType !='' ) {%>
-        <a href="<%= iconLink %>" class="p-2.5">
-          <% if(iconType=='default' ) {%>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <g id="Iconly/Regular/Two-tone/Category">
-                <g id="Category">
-                  <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3 6.5C3 3.87479 3.02811 3 6.5 3C9.97189 3 10 3.87479 10 6.5C10 9.12521 10.0111 10 6.5 10C2.98893 10 3 9.12521 3 6.5Z"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path id="Stroke 3" opacity="1" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M14 6.5C14 3.87479 14.0281 3 17.5 3C20.9719 3 21 3.87479 21 6.5C21 9.12521 21.0111 10 17.5 10C13.9889 10 14 9.12521 14 6.5Z"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path id="Stroke 5" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3 17.5C3 14.8748 3.02811 14 6.5 14C9.97189 14 10 14.8748 10 17.5C10 20.1252 10.0111 21 6.5 21C2.98893 21 3 20.1252 3 17.5Z"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M14 17.5C14 14.8748 14.0281 14 17.5 14C20.9719 14 21 14.8748 21 17.5C21 20.1252 21.0111 21 17.5 21C13.9889 21 14 20.1252 14 17.5Z"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-              </g>
-            </svg>
-            <% } %>
-              <% if(iconType=='list' ) {%>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
-                  <path d="M24 19H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M24 10H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M8 38H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M8 28H40" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="bevel" />
-                  <path d="M8 10L16 15L8 20V10Z" fill="#fff" stroke="#fff" stroke-width="3" stroke-linejoin="bevel" />
-                </svg>
+  <% if( lastPage==='closeBtn' ) {%>
+    <button type="button" class="btn p-2.5" data-bs-dismiss="offcanvas" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M15.5 19.0001L8.5 12.0001L15.5 5.00012" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </button>
+    <% }else{ %>
+      <a href="<%= lastPage %>" class="p-2.5" data-id="return-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M15.5 19.0001L8.5 12.0001L15.5 5.00012" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <% } %>
+        <% if(title !=='' ) {%>
+          <h1 class="fs-base fw-bold text-white">
+            <%= title %>
+          </h1>
+          <% } %>
+            <% if(iconType !='empty' ) {%>
+              <a href="<%= iconLink %>" class="p-2.5">
+                <% if(iconType=='default' ) {%>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g id="Iconly/Regular/Two-tone/Category">
+                      <g id="Category">
+                        <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 6.5C3 3.87479 3.02811 3 6.5 3C9.97189 3 10 3.87479 10 6.5C10 9.12521 10.0111 10 6.5 10C2.98893 10 3 9.12521 3 6.5Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path id="Stroke 3" opacity="1" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M14 6.5C14 3.87479 14.0281 3 17.5 3C20.9719 3 21 3.87479 21 6.5C21 9.12521 21.0111 10 17.5 10C13.9889 10 14 9.12521 14 6.5Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path id="Stroke 5" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3 17.5C3 14.8748 3.02811 14 6.5 14C9.97189 14 10 14.8748 10 17.5C10 20.1252 10.0111 21 6.5 21C2.98893 21 3 20.1252 3 17.5Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M14 17.5C14 14.8748 14.0281 14 17.5 14C20.9719 14 21 14.8748 21 17.5C21 20.1252 21.0111 21 17.5 21C13.9889 21 14 20.1252 14 17.5Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                    </g>
+                  </svg>
+                  <% }else if(iconType=='list' ) {%>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPlayList"
+                      aria-controls="offcanvasRight">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                        <path d="M24 19H40" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                          stroke-linejoin="bevel" />
+                        <path d="M24 10H40" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                          stroke-linejoin="bevel" />
+                        <path d="M8 38H40" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                          stroke-linejoin="bevel" />
+                        <path d="M8 28H40" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                          stroke-linejoin="bevel" />
+                        <path d="M8 10L16 15L8 20V10Z" fill="#fff" stroke="#fff" stroke-width="3"
+                          stroke-linejoin="bevel" />
+                      </svg>
+                    </button>
+                    <% } %>
+              </a>
+              <% }else{ %>
+                <div style="width:44px; height:44px">&nbsp;</div>
                 <% } %>
-        </a>
-        <% } %>
 </nav>
