@@ -282,7 +282,7 @@
   height: 283px;
   background-image:  
   linear-gradient(
-    to bottom,
+    to top,
     rgba(29, 26, 62, 1),
     rgba(29, 26, 62, 0.41),
     rgba(29, 26, 62, 0.13),
@@ -296,4 +296,80 @@
   left: 0;
   width: 100%;
   z-index: 0;
+}
+.close-icon {
+  z-index: 1;
+  position: relative;
+}
+.success-check-bg {
+  background: url('/assets/images/success-bg.png');
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-size: cover;
+  width: 142px;
+  height: 84px;
+  position: relative;
+  z-index: 1;
+}
+.success-check-time {
+  border: 0.5px solid rgba(29, 26, 62, 1);
+  padding: 24px 61px;
+  z-index: 1;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px 16px 0px 0px;
+  .check-time-year {
+    font-size: 17.28px;
+    line-height: 24.2px;
+    font-weight: 400;
+    color: $grey-100;
+  }
+  .check-time-date {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    color: $white;
+  }
+  .check-time-week {
+    font-size: 23.05px;
+    line-height: 23.81px;
+    font-weight: 500;
+    color: $white;
+  }
+  .clock-line {
+    margin-bottom: 2px;
+    width: 157px;
+    height: 1.44px;
+    background: rgba(97, 95, 120, 1);
+  }
+  .check-time-clock {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $white;
+  }
+}
+.join-line {
+  border: 0.5px solid rgba(29, 26, 62, 1);
+  padding: 24px 48px;
+  z-index: 1;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px 0px 16px 16px;
+  .join-line-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey-100;
+  }
+  .join-line-btn {
+    border: 0px;
+    border-radius: 40px;
+    width: 100%;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: rgba(58, 206, 1, 1);
+  }
 }
