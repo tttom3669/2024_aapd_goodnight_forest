@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>填寫預約資料</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+
+  <script type="module" crossorigin src="/2024_aapd_goodnight_forest/assets/edit-reservation-info-3a182e55.js"></script>
+  <link rel="modulepreload" crossorigin href="/2024_aapd_goodnight_forest/assets/main-6b83d44d.js">
+  <link rel="stylesheet" href="/2024_aapd_goodnight_forest/assets/main-74729823.css">
+</head>
+<body>
+  <header class="header">
+  <p class="text-white header__time">9:41</p>
+  <div class="header__status-bar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="11" viewBox="0 0 19 11" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M15.85 0C15.2977 0 14.85 0.447715 14.85 1V10C14.85 10.5523 15.2977 11 15.85 11H17.15C17.7022 11 18.15 10.5523 18.15 10V1C18.15 0.447715 17.7022 0 17.15 0H15.85ZM9.90004 3.19991C9.90004 2.64763 10.3478 2.19991 10.9 2.19991H12.2C12.7523 2.19991 13.2 2.64763 13.2 3.19991V9.99991C13.2 10.5522 12.7523 10.9999 12.2 10.9999H10.9C10.3478 10.9999 9.90004 10.5522 9.90004 9.99991V3.19991ZM5.94991 4.40004C5.39763 4.40004 4.94991 4.84776 4.94991 5.40004V10C4.94991 10.5523 5.39762 11 5.94991 11H7.24991C7.8022 11 8.24991 10.5523 8.24991 10V5.40004C8.24991 4.84776 7.8022 4.40004 7.24991 4.40004H5.94991ZM1.1 11C0.492487 11 0 10.5075 0 9.9V7.15C0 6.54249 0.492487 6.05 1.1 6.05H2.2C2.80751 6.05 3.3 6.54249 3.3 7.15V9.9C3.3 10.5075 2.80751 11 2.2 11H1.1Z"
+        fill="white" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+      <path
+        d="M9.00049 2.69984C11.6121 2.69995 14.1239 3.70936 16.0167 5.51942C16.1592 5.65916 16.387 5.6574 16.5274 5.51547L17.8899 4.13235C17.961 4.06036 18.0006 3.96285 18 3.86139C17.9994 3.75994 17.9586 3.6629 17.8867 3.59175C12.9188 -1.19725 5.08138 -1.19725 0.113468 3.59175C0.0415041 3.66284 0.000672511 3.75985 8.9596e-06 3.86131C-0.000654709 3.96277 0.0389042 4.06031 0.109932 4.13235L1.47278 5.51547C1.61307 5.65762 1.84107 5.65938 1.98351 5.51942C3.87652 3.70924 6.38859 2.69983 9.00049 2.69984ZM9.00049 7.19971C10.4354 7.19962 11.8191 7.73611 12.8828 8.70494C13.0267 8.84243 13.2533 8.83945 13.3935 8.69822L14.7544 7.3151C14.8261 7.24255 14.8658 7.14413 14.8648 7.04186C14.8638 6.9396 14.822 6.84201 14.7489 6.77094C11.5099 3.74028 6.49385 3.74028 3.25483 6.77094C3.18166 6.84201 3.13992 6.93964 3.13896 7.04195C3.138 7.14425 3.1779 7.24266 3.24972 7.3151L4.61021 8.69822C4.75045 8.83945 4.97707 8.84243 5.12094 8.70494C6.18388 7.73675 7.56651 7.20031 9.00049 7.19971ZM11.6158 10.5006C11.6886 10.4288 11.7287 10.3299 11.7266 10.2273C11.7245 10.1248 11.6804 10.0276 11.6048 9.95883C10.1014 8.67978 7.89957 8.67978 6.39618 9.95883C6.32049 10.0276 6.27636 10.1247 6.2742 10.2272C6.27204 10.3298 6.31206 10.4287 6.38479 10.5006L8.73924 12.8902C8.80824 12.9605 8.90233 13 9.00049 13C9.09866 13 9.19274 12.9605 9.26175 12.8902L11.6158 10.5006Z"
+        fill="white" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="13" viewBox="0 0 27 13" fill="none">
+      <path
+        d="M1.9231 3.20515C1.9231 2.49709 2.49709 1.9231 3.20515 1.9231H20.8334C21.5414 1.9231 22.1154 2.49709 22.1154 3.20515V9.29489C22.1154 10.0029 21.5414 10.5769 20.8334 10.5769H3.20515C2.49709 10.5769 1.9231 10.0029 1.9231 9.29489V3.20515Z"
+        fill="white" />
+      <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+        d="M3.20513 0.961538H20.8333C22.0724 0.961538 23.0769 1.96603 23.0769 3.20513V9.29487C23.0769 10.534 22.0724 11.5385 20.8333 11.5385H3.20513C1.96603 11.5385 0.961538 10.534 0.961538 9.29487V3.20513C0.961538 1.96603 1.96603 0.961538 3.20513 0.961538ZM0 3.20513C0 1.43498 1.43499 0 3.20513 0H20.8333C22.6035 0 24.0385 1.43499 24.0385 3.20513V9.29487C24.0385 11.065 22.6035 12.5 20.8333 12.5H3.20513C1.43498 12.5 0 11.065 0 9.29487V3.20513ZM26.6026 6.25C26.6026 7.23512 25.9188 8.06054 25 8.27759V4.22241C25.9188 4.43945 26.6026 5.26488 26.6026 6.25Z"
+        fill="white" />
+    </svg>
+  </div>
+</header>  <!-- 填寫預約資料 -->
+  <section class="bg-top">
+    <div class="container py-3">
+      <div class="d-flex bd-highlight align-items-center justify-content-center">
+        <a href="./sleep-healthroom.html" class="flex-shrink-1 bd-highlight">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M31 36L19 24L31 12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="w-100 bd-highlight d-flex justify-content-center">
+          <h2 class="text-white fw-bold fs-base lh-sm">填寫預約資料</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container py-3 mb-2">
+      <div class="edit-doctor mb-4">
+        <div class="edit-doctor-img me-4">
+          <img class="doctor-img" src="/2024_aapd_goodnight_forest/assets/article-9-98a3d7aa.png" alt="doctor-1">
+        </div>
+        <div class="edit-text-item">
+          <div class="d-flex align-items-center mb-1">
+            <p class="text-white fs-sm lh-sm fw-bold me-3">張立宏 醫師</p>
+            <div class="edit-evaluate">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="12" viewBox="0 0 12 12" width="12"><path d="m5.28347 1.54595c.29345-.594594 1.14132-.594592 1.43478 0l1.11172 2.25261 2.48593.36123c.6562.09534.9182.90172.4433 1.36455l-1.79877 1.75341.42464 2.47586c.11209.65349-.57385 1.15189-1.16076.84339l-2.22345-1.16899-2.22346 1.16899c-.58691.3085-1.27285-.1899-1.16076-.84339l.42464-2.47586-1.79882-1.75341c-.474809-.46283-.2128-1.26921.44338-1.36455l2.4859-.36123z" fill="#FFDC19"/></svg>
+              <p class="text-grey-100 fs-xxs lh-base fw-normal star-space">4.2 (500+)</p>
+            </div>
+          </div>
+          <p class="text-grey-50 fs-xs lh-sm fw-medium mb-3">臺大醫院 | 家醫科主治醫師</p>
+          <div class="d-flex align-items-center">
+            <span class="edit-tag-bg me-2">睡眠障礙</span>
+            <span class="edit-tag-bg">失眠</span>
+          </div>
+        </div>
+      </div>
+      <p class="text-grey-100 lh-base fs-xs fw-normal">專注於治療各類心理健康問題，如失眠和睡眠障礙。致力於幫助患者改善睡眠質量，提升整體心理健康。</p>
+    </div>
+  </section>
+
+  <section class="bg-bottom">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <p class="text-white fs-base lh-sm fw-bold">預約日期</p>
+        <p class="text-white fs-xs lh-sm fw-medium">2024/07/23 11:30-12:00
+          <span class="ms-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16" viewBox="0 0 24 24" width="16"><path clip-rule="evenodd" d="m9.3764 20.028 8.7864-11.36244c.4775-.61273.6473-1.32114.4881-2.04245-.1379-.65573-.5412-1.27922-1.146-1.7522l-1.475-1.17172c-1.284-1.02123-2.8758-.91373-3.7884.25799l-.9869 1.28029c-.1273.16017-.0955.39667.0637.52566 0 0 2.4937 1.99945 2.5468 2.04245.1698.16125.2971.37624.329.63424.053.50523-.2972.97822-.8171 1.04272-.2441.03225-.4776-.043-.6473-.18275l-2.6211-2.08544c-.12734-.09568-.31835-.07525-.42447.05375l-6.22899 8.0623c-.40324.5052-.54119 1.161-.40324 1.7952l.79587 3.4507c.04244.1827.20162.3117.39262.3117l3.50183-.043c.63669-.0107 1.23094-.301 1.63418-.817zm4.9033-1.0746h5.7101c.5571 0 1.0102.459 1.0102 1.0233 0 .5655-.4531 1.0234-1.0102 1.0234h-5.7101c-.5571 0-1.0102-.4579-1.0102-1.0234 0-.5643.4531-1.0233 1.0102-1.0233z" fill="#FFFFFF" fill-rule="evenodd"/></svg>
+          </span>
+        </p>
+      </div>
+      <p class="text-white fs-base lh-sm fw-bold mb-6">預約資料</p>
+      <div class="d-flex flex-column align-items-start">
+        <label for="editInput1" class="text-white fs-sm lh-sm fw-medium mb-2">姓名</label>
+        <input type="text" class="border border-1 border-grey-100 edit-input fw-normal lh-base " id="editInput1" placeholder="請輸入姓名">
+      </div>
+      <p class="text-grey-50 lh-base fw-normal fs-xs ms-4 mb-3">請至少輸入8~16位數</p>
+      <div>
+        <label for="editInput1" class="text-white fs-sm lh-sm fw-medium mb-2">性別</label>
+      </div>
+      <div class="d-flex align-items-center justify-content-between py-3">
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label text-white text-nowrap me-3" for="flexRadioDefault1">
+            生理男
+          </label>
+        </div>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label text-white text-nowrap me-3" for="flexRadioDefault2">
+            生理女
+          </label>
+        </div>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+          <label class="form-check-label text-white text-nowrap" for="flexRadioDefault3">
+            不方便透露
+          </label>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-start mb-29">
+        <label for="editInput2" class="text-white fs-sm lh-sm fw-medium mb-2">生日</label>
+        <div class="birthday-date-item">
+          <input type="text" class="fw-normal lh-base birthday-date-input" placeholder="YYYY/MM/DD" name="datepicker">
+          <span class="birthday-date-input-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="24" viewBox="0 0 24 24" width="24"><g fill="#292d32"><path d="m16.7502 3.56v-1.56c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.5h-6.49997v-1.5c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.56c-2.7.25-4.01 1.86-4.21 4.25-.02.29.22.53.5.53h16.91997c.29 0 .53-.25.5-.53-.2-2.39-1.51-4-4.21-4.25z" fill="#FFFFFF"/><path d="m20 9.83984h-16c-.55 0-1 .44996-1 .99996v6.16c0 3 1.5 5 5 5h8c3.5 0 5-2 5-5v-6.16c0-.55-.45-.99996-1-.99996zm-10.79 8.36996c-.05.04-.1.09-.15.12-.06.04-.12.07-.18.09-.06.03-.12.05-.18.06-.07.01-.13.02-.2.02-.13 0-.26-.03-.38-.08-.13-.05-.23-.12-.33-.21-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.1-.09.2-.16.33-.21.18-.08.38-.1.58-.06.06.01.12.03.18.06.06.02.12.05.18.09.05.04.1.08.15.12.18.19.29.45.29.71s-.11.52-.29.71zm0-3.5c-.19.18-.45.29-.71.29s-.52-.11-.71-.29c-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.28-.28.72-.37 1.09-.21.13.05.24.12.33.21.18.19.29.45.29.71s-.11.52-.29.71zm3.5 3.5c-.19.18-.45.29-.71.29s-.52-.11-.71-.29c-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.37-.37 1.05-.37 1.42 0 .18.19.29.45.29.71s-.11.52-.29.71zm0-3.5c-.05.04-.1.08-.15.12-.06.04-.12.07-.18.09-.06.03-.12.05-.18.06-.07.01-.13.02-.2.02-.26 0-.52-.11-.71-.29-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.09-.09.2-.16.33-.21.37-.16.81-.07 1.09.21.18.19.29.45.29.71s-.11.52-.29.71zm3.5 3.5c-.19.18-.45.29-.71.29s-.52-.11-.71-.29c-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.37-.37 1.05-.37 1.42 0 .18.19.29.45.29.71s-.11.52-.29.71zm0-3.5c-.05.04-.1.08-.15.12-.06.04-.12.07-.18.09-.06.03-.12.05-.18.06-.07.01-.14.02-.2.02-.26 0-.52-.11-.71-.29-.18-.19-.29-.45-.29-.71s.11-.52.29-.71c.1-.09.2-.16.33-.21.18-.08.38-.1.58-.06.06.01.12.03.18.06.06.02.12.05.18.09l.15.12c.18.19.29.45.29.71s-.11.52-.29.71z" fill="#FFFFFF"/></g></svg>
+          </span>
+        </div>
+
+      </div>
+      <div class="d-flex flex-column align-items-start mb-29">
+        <label for="editInput3" class="text-white fs-sm lh-sm fw-medium mb-2">身分證字號</label>
+        <input type="text" class="border border-1 border-grey-100 edit-input fw-normal lh-base " id="editInput3" placeholder="A123456789">
+      </div>
+      <div class="d-flex flex-column align-items-start mb-29">
+        <label for="editInput7" class="text-white fs-sm lh-sm fw-medium mb-2">聯絡電話</label>
+        <input type="tel" class="border border-1 border-grey-100 edit-input fw-normal lh-base" id="editInput7" placeholder="0987654321">
+      </div>
+      <div class="d-flex flex-column align-items-start">
+        <label for="editInput5" class="text-white fs-sm lh-sm fw-medium mb-2">信箱</label>
+        <input type="email" class="border border-1 border-grey-100 edit-input fw-normal lh-base " id="editInput5" placeholder="zzzz@gmail.com">
+      </div>
+      <p class="text-grey-50 lh-base fw-normal fs-xs ms-4 mb-3">請至少輸入8~16位數</p>
+      <div class="d-flex flex-column align-items-start">
+        <label for="editInput6" class="text-white fs-sm lh-sm fw-medium mb-2">看診原因</label>
+        <input type="email" class="border border-1 border-grey-100 reason-input fw-normal lh-base " id="editInput6" placeholder="請簡述你的需求">
+      </div>
+      <p class="text-grey-50 lh-base fw-normal fs-xs me-4 mb-3 text-end mb-8">0/200</p>
+      <div class="form-check d-flex align-items-center mb-8">
+        <div>
+          <input class="form-check-input agree-check-input me-2" type="checkbox" id="flexCheckDefault6">
+        </div>
+        <label class="form-check-label" for="flexCheckDefault6">
+          <span class="text-white fw-medium lh-sm fs-sm text-nowrap">我同意將我的睡眠報告分享給選定的醫生</span><br>
+          <span class="text-grey-100 fw-normal lh-base fs-xxs">
+            為了更好地幫助您解決睡眠問題，我們可以將您的睡眠報告分享給您選擇的醫生。這些信息將用於評估您的睡眠狀況，並給出專業建議。
+          </span>
+        </label>
+      </div>
+      <div class="d-flex align-items-center justify-content-between privacy-item mb-79">
+        <div class="d-flex align-items-center">
+          <input class="form-check-input privacy-check-input" type="checkbox" id="flexCheckDefault">
+          <label class="form-check-label privacy-label" for="flexCheckDefault">
+            我不是機器人
+          </label>
+        </div>
+        <div class="d-flex align-items-center flex-column">
+          <span class="mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32" fill="#74A6FF"><path d="m370.72 133.28c-31.262-29.272-71.832-45.318-114.872-45.28-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15h-57.303c-7.498 0-13.194-6.807-11.807-14.176 21.637-114.9 122.517-201.824 243.704-201.824 66.448 0 126.791 26.136 171.315 68.685l35.715-35.715c15.119-15.119 40.97-4.411 40.97 16.971v134.059c0 13.255-10.745 24-24 24h-134.059c-21.382 0-32.09-25.851-16.971-40.971zm-338.72 162.72h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176-21.638 114.898-122.518 201.822-243.705 201.822-66.448 0-126.791-26.136-171.315-68.685l-35.715 35.715c-15.119 15.119-40.97 4.411-40.97-16.971v-134.059c0-13.255 10.745-24 24-24z"/></svg>
+          </span>
+          <span class="text-grey-200 fs-sm fw-medium lh-sm mb-1"
+          >reCAPTCHA</span>
+          <span class="text-grey-200 fs-xs fw-normal lh-sm">Privacy - Terms</span>
+        </div>
+    </div>
+    <button class="btn btn-primary btn-next" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightConfirm" aria-controls="offcanvasRightConfirm">下一步</button>
+  </section>
+
+  <!-- 預約資料確認 -->
+  <section>
+    <div class="offcanvas offcanvas-success" tabindex="-1" id="offcanvasRightConfirm" aria-labelledby="offcanvasRightConfirmLabel">
+      <header class="header">
+  <p class="text-white header__time">9:41</p>
+  <div class="header__status-bar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="11" viewBox="0 0 19 11" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M15.85 0C15.2977 0 14.85 0.447715 14.85 1V10C14.85 10.5523 15.2977 11 15.85 11H17.15C17.7022 11 18.15 10.5523 18.15 10V1C18.15 0.447715 17.7022 0 17.15 0H15.85ZM9.90004 3.19991C9.90004 2.64763 10.3478 2.19991 10.9 2.19991H12.2C12.7523 2.19991 13.2 2.64763 13.2 3.19991V9.99991C13.2 10.5522 12.7523 10.9999 12.2 10.9999H10.9C10.3478 10.9999 9.90004 10.5522 9.90004 9.99991V3.19991ZM5.94991 4.40004C5.39763 4.40004 4.94991 4.84776 4.94991 5.40004V10C4.94991 10.5523 5.39762 11 5.94991 11H7.24991C7.8022 11 8.24991 10.5523 8.24991 10V5.40004C8.24991 4.84776 7.8022 4.40004 7.24991 4.40004H5.94991ZM1.1 11C0.492487 11 0 10.5075 0 9.9V7.15C0 6.54249 0.492487 6.05 1.1 6.05H2.2C2.80751 6.05 3.3 6.54249 3.3 7.15V9.9C3.3 10.5075 2.80751 11 2.2 11H1.1Z"
+        fill="white" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+      <path
+        d="M9.00049 2.69984C11.6121 2.69995 14.1239 3.70936 16.0167 5.51942C16.1592 5.65916 16.387 5.6574 16.5274 5.51547L17.8899 4.13235C17.961 4.06036 18.0006 3.96285 18 3.86139C17.9994 3.75994 17.9586 3.6629 17.8867 3.59175C12.9188 -1.19725 5.08138 -1.19725 0.113468 3.59175C0.0415041 3.66284 0.000672511 3.75985 8.9596e-06 3.86131C-0.000654709 3.96277 0.0389042 4.06031 0.109932 4.13235L1.47278 5.51547C1.61307 5.65762 1.84107 5.65938 1.98351 5.51942C3.87652 3.70924 6.38859 2.69983 9.00049 2.69984ZM9.00049 7.19971C10.4354 7.19962 11.8191 7.73611 12.8828 8.70494C13.0267 8.84243 13.2533 8.83945 13.3935 8.69822L14.7544 7.3151C14.8261 7.24255 14.8658 7.14413 14.8648 7.04186C14.8638 6.9396 14.822 6.84201 14.7489 6.77094C11.5099 3.74028 6.49385 3.74028 3.25483 6.77094C3.18166 6.84201 3.13992 6.93964 3.13896 7.04195C3.138 7.14425 3.1779 7.24266 3.24972 7.3151L4.61021 8.69822C4.75045 8.83945 4.97707 8.84243 5.12094 8.70494C6.18388 7.73675 7.56651 7.20031 9.00049 7.19971ZM11.6158 10.5006C11.6886 10.4288 11.7287 10.3299 11.7266 10.2273C11.7245 10.1248 11.6804 10.0276 11.6048 9.95883C10.1014 8.67978 7.89957 8.67978 6.39618 9.95883C6.32049 10.0276 6.27636 10.1247 6.2742 10.2272C6.27204 10.3298 6.31206 10.4287 6.38479 10.5006L8.73924 12.8902C8.80824 12.9605 8.90233 13 9.00049 13C9.09866 13 9.19274 12.9605 9.26175 12.8902L11.6158 10.5006Z"
+        fill="white" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="13" viewBox="0 0 27 13" fill="none">
+      <path
+        d="M1.9231 3.20515C1.9231 2.49709 2.49709 1.9231 3.20515 1.9231H20.8334C21.5414 1.9231 22.1154 2.49709 22.1154 3.20515V9.29489C22.1154 10.0029 21.5414 10.5769 20.8334 10.5769H3.20515C2.49709 10.5769 1.9231 10.0029 1.9231 9.29489V3.20515Z"
+        fill="white" />
+      <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+        d="M3.20513 0.961538H20.8333C22.0724 0.961538 23.0769 1.96603 23.0769 3.20513V9.29487C23.0769 10.534 22.0724 11.5385 20.8333 11.5385H3.20513C1.96603 11.5385 0.961538 10.534 0.961538 9.29487V3.20513C0.961538 1.96603 1.96603 0.961538 3.20513 0.961538ZM0 3.20513C0 1.43498 1.43499 0 3.20513 0H20.8333C22.6035 0 24.0385 1.43499 24.0385 3.20513V9.29487C24.0385 11.065 22.6035 12.5 20.8333 12.5H3.20513C1.43498 12.5 0 11.065 0 9.29487V3.20513ZM26.6026 6.25C26.6026 7.23512 25.9188 8.06054 25 8.27759V4.22241C25.9188 4.43945 26.6026 5.26488 26.6026 6.25Z"
+        fill="white" />
+    </svg>
+  </div>
+</header>      <div class="bg-top">
+        <div class="offcanvas-header  edit-body">
+          <div class="container py-3">
+            <div class="d-flex bd-highlight align-items-center">
+              <button type="button" class="btn-confirm flex-shrink-1 bd-highlight" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M31 36L19 24L31 12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="w-100 bd-highlight d-flex justify-content-center">
+                <h2 class="text-white fw-bold fs-base lh-sm">預約確認</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-body edit-body">    
+          <div class="container py-3 mb-2">
+            <div class="edit-doctor mb-4">
+              <div class="edit-doctor-img me-4">
+                <img class="doctor-img" src="/2024_aapd_goodnight_forest/assets/article-9-98a3d7aa.png" alt="doctor-1">
+              </div>
+              <div class="edit-text-item">
+                <div class="d-flex align-items-center mb-1">
+                  <p class="text-white fs-sm lh-sm fw-bold me-3">張立宏 醫師</p>
+                  <div class="edit-evaluate">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="12" viewBox="0 0 12 12" width="12"><path d="m5.28347 1.54595c.29345-.594594 1.14132-.594592 1.43478 0l1.11172 2.25261 2.48593.36123c.6562.09534.9182.90172.4433 1.36455l-1.79877 1.75341.42464 2.47586c.11209.65349-.57385 1.15189-1.16076.84339l-2.22345-1.16899-2.22346 1.16899c-.58691.3085-1.27285-.1899-1.16076-.84339l.42464-2.47586-1.79882-1.75341c-.474809-.46283-.2128-1.26921.44338-1.36455l2.4859-.36123z" fill="#FFDC19"/></svg>
+                    <p class="text-grey-100 fs-xxs lh-base fw-normal star-space">4.2 (500+)</p>
+                  </div>
+                </div>
+                <p class="text-grey-50 fs-xs lh-sm fw-medium mb-3">臺大醫院 | 家醫科主治醫師</p>
+                <div class="d-flex align-items-center">
+                  <span class="edit-tag-bg me-2">睡眠障礙</span>
+                  <span class="edit-tag-bg">失眠</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-grey-100 lh-base fs-xs fw-normal">專注於治療各類心理健康問題，如失眠和睡眠障礙。致力於幫助患者改善睡眠質量，提升整體心理健康。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="mb-8">
+          <li class="data-confirm-item data-confirm-top">
+            <div class="data-confirm-title">姓名</div>
+            <div class="data-confirm-text">Simon</div>
+          </li>
+          <li class="data-confirm-item">
+            <div class="data-confirm-title">性別</div>
+            <div class="data-confirm-text">生理男</div>
+          </li>
+          <li class="data-confirm-item">
+            <div class="data-confirm-title">生日</div>
+            <div class="data-confirm-text">2000/07/02</div>
+          </li>
+          <li class="data-confirm-item">
+            <div class="data-confirm-title">身分證</div>
+            <div class="data-confirm-text">A123456789</div>
+          </li>
+          <li class="data-confirm-item">
+            <div class="data-confirm-title">聯絡電話</div>
+            <div class="data-confirm-text">0987654321</div>
+          </li>
+          <li class="data-confirm-item">
+            <div class="data-confirm-title">email</div>
+            <div class="data-confirm-text">zzzz@gmail.com</div>
+          </li>
+          <li class="data-confirm-item data-confirm-bottom">
+            <div class="data-confirm-title">看診原因</div>
+            <div class="data-confirm-text">最近起床常常感到疲倦，有失眠的困擾</div>
+          </li>
+        </ul>
+        <button class="btn btn-primary btn-next" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSuccess" aria-controls="offcanvasRightSuccess">確定預約</button>
+      </div>
+      <footer class="footer py-2">
+  <div class="footer__bar">&nbsp;</div>
+</footer>    </div>
+  </section>
+
+  <!-- 預約成功畫面 -->
+  <div class="offcanvas offcanvas-success" tabindex="-1" id="offcanvasRightSuccess" aria-labelledby="offcanvasRightSuccessLabel">
+    <header class="header">
+  <p class="text-white header__time">9:41</p>
+  <div class="header__status-bar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="11" viewBox="0 0 19 11" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M15.85 0C15.2977 0 14.85 0.447715 14.85 1V10C14.85 10.5523 15.2977 11 15.85 11H17.15C17.7022 11 18.15 10.5523 18.15 10V1C18.15 0.447715 17.7022 0 17.15 0H15.85ZM9.90004 3.19991C9.90004 2.64763 10.3478 2.19991 10.9 2.19991H12.2C12.7523 2.19991 13.2 2.64763 13.2 3.19991V9.99991C13.2 10.5522 12.7523 10.9999 12.2 10.9999H10.9C10.3478 10.9999 9.90004 10.5522 9.90004 9.99991V3.19991ZM5.94991 4.40004C5.39763 4.40004 4.94991 4.84776 4.94991 5.40004V10C4.94991 10.5523 5.39762 11 5.94991 11H7.24991C7.8022 11 8.24991 10.5523 8.24991 10V5.40004C8.24991 4.84776 7.8022 4.40004 7.24991 4.40004H5.94991ZM1.1 11C0.492487 11 0 10.5075 0 9.9V7.15C0 6.54249 0.492487 6.05 1.1 6.05H2.2C2.80751 6.05 3.3 6.54249 3.3 7.15V9.9C3.3 10.5075 2.80751 11 2.2 11H1.1Z"
+        fill="white" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+      <path
+        d="M9.00049 2.69984C11.6121 2.69995 14.1239 3.70936 16.0167 5.51942C16.1592 5.65916 16.387 5.6574 16.5274 5.51547L17.8899 4.13235C17.961 4.06036 18.0006 3.96285 18 3.86139C17.9994 3.75994 17.9586 3.6629 17.8867 3.59175C12.9188 -1.19725 5.08138 -1.19725 0.113468 3.59175C0.0415041 3.66284 0.000672511 3.75985 8.9596e-06 3.86131C-0.000654709 3.96277 0.0389042 4.06031 0.109932 4.13235L1.47278 5.51547C1.61307 5.65762 1.84107 5.65938 1.98351 5.51942C3.87652 3.70924 6.38859 2.69983 9.00049 2.69984ZM9.00049 7.19971C10.4354 7.19962 11.8191 7.73611 12.8828 8.70494C13.0267 8.84243 13.2533 8.83945 13.3935 8.69822L14.7544 7.3151C14.8261 7.24255 14.8658 7.14413 14.8648 7.04186C14.8638 6.9396 14.822 6.84201 14.7489 6.77094C11.5099 3.74028 6.49385 3.74028 3.25483 6.77094C3.18166 6.84201 3.13992 6.93964 3.13896 7.04195C3.138 7.14425 3.1779 7.24266 3.24972 7.3151L4.61021 8.69822C4.75045 8.83945 4.97707 8.84243 5.12094 8.70494C6.18388 7.73675 7.56651 7.20031 9.00049 7.19971ZM11.6158 10.5006C11.6886 10.4288 11.7287 10.3299 11.7266 10.2273C11.7245 10.1248 11.6804 10.0276 11.6048 9.95883C10.1014 8.67978 7.89957 8.67978 6.39618 9.95883C6.32049 10.0276 6.27636 10.1247 6.2742 10.2272C6.27204 10.3298 6.31206 10.4287 6.38479 10.5006L8.73924 12.8902C8.80824 12.9605 8.90233 13 9.00049 13C9.09866 13 9.19274 12.9605 9.26175 12.8902L11.6158 10.5006Z"
+        fill="white" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="13" viewBox="0 0 27 13" fill="none">
+      <path
+        d="M1.9231 3.20515C1.9231 2.49709 2.49709 1.9231 3.20515 1.9231H20.8334C21.5414 1.9231 22.1154 2.49709 22.1154 3.20515V9.29489C22.1154 10.0029 21.5414 10.5769 20.8334 10.5769H3.20515C2.49709 10.5769 1.9231 10.0029 1.9231 9.29489V3.20515Z"
+        fill="white" />
+      <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+        d="M3.20513 0.961538H20.8333C22.0724 0.961538 23.0769 1.96603 23.0769 3.20513V9.29487C23.0769 10.534 22.0724 11.5385 20.8333 11.5385H3.20513C1.96603 11.5385 0.961538 10.534 0.961538 9.29487V3.20513C0.961538 1.96603 1.96603 0.961538 3.20513 0.961538ZM0 3.20513C0 1.43498 1.43499 0 3.20513 0H20.8333C22.6035 0 24.0385 1.43499 24.0385 3.20513V9.29487C24.0385 11.065 22.6035 12.5 20.8333 12.5H3.20513C1.43498 12.5 0 11.065 0 9.29487V3.20513ZM26.6026 6.25C26.6026 7.23512 25.9188 8.06054 25 8.27759V4.22241C25.9188 4.43945 26.6026 5.26488 26.6026 6.25Z"
+        fill="white" />
+    </svg>
+  </div>
+</header>    <div class="bg-top bg-edit">
+      <div class="offcanvas-header mb-8">
+        <div class="bg-edit-success"></div>
+        <a href="./sleep-healthroom.html" class="close-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="m0 0h24v24h-24z" fill="none"/><path d="m18.3 5.71c-.39-.39-1.02-.39-1.41 0l-4.89 4.88-4.89-4.89c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l4.89 4.89-4.89 4.89c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0l4.89-4.89 4.89 4.89c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41l-4.89-4.89 4.89-4.89c.38-.38.38-1.02 0-1.4z" fill="#FFFFFF" stroke="#FFFFFF"/></svg>
+        </a>
+      </div>
+      <div class="offcanvas-body container">
+        <div class="h-100 d-flex flex-column  align-items-center">
+          <div class="success-check-bg mb-4"></div>
+          <p class="fs-4 lh-sm fw-bold text-white mb-6">預約成功</p>
+          <div class="mx-6">
+            <ul>
+              <li class="success-check-time">
+                <p class="check-time-year">2024</p>
+                <p class="check-time-date mb-2">
+                  07.23
+                  <span class="check-time-week">(二)</span>
+                </p>
+                <div class="clock-line"></div>
+                <p class="check-time-clock">11:30 - 12:00</p>
+              </li>
+              <li class="join-line mb-6">
+                <p class="mb-4 join-line-text">加入LINE群組以便於安排線上診療</p>
+                <button type="button" class="join-line-btn">加入LINE群組</button>
+              </li>
+            </ul>
+          </div>
+          <a href="./sleep-healthroom.html" class="fw-bold lh-sm fz-sm text-grey-100 d-block">取消預約</a>
+        </div>
+
+      </div>
+    </div>
+    <footer class="footer py-2">
+  <div class="footer__bar">&nbsp;</div>
+</footer>  </div>
+  <footer class="footer py-2">
+  <div class="footer__bar">&nbsp;</div>
+</footer>  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+  
+  
+</body>
+</html>
