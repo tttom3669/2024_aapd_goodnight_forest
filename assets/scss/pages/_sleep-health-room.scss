@@ -1,13 +1,13 @@
 .bg-health {
-  width: 375px;
+  max-width: 375px;
   height: 204px;
   background: url('/assets/images/bg-health.png');
   background-color: linear-gradient(
-      to bottom,
-      #1d1a3e 100%,
-      rgba(29, 26, 62, 1) 73%,
-      rgba(29, 26, 62, 1) 41%,
-      rgba(29, 26, 62, 1) 0%
+    to bottom,
+    #1d1a3e 100%,
+    rgba(29, 26, 62, 1) 73%,
+    rgba(29, 26, 62, 1) 41%,
+    rgba(29, 26, 62, 1) 0%
   );
 }
 .health-title {
@@ -32,12 +32,12 @@
   right: 10%;
 }
 //------
-
 .nav .nav-article {
   width: 100%;
 }
 .nav-article {
   border: transparent;
+  position: relative;
 }
 .nav-article-item {
   width: 50%;
@@ -54,12 +54,11 @@
   background-color: transparent;
   border-color: transparent;
   border: transparent;
-  position: relative;
-  z-index: 1; 
+  z-index: 2;
   pointer-events: all; /* 可以不擋住可正常點選*/
 }
 .nav-article .nav-link-home.active,
-.nav-article .nav-link-profile.active { 
+.nav-article .nav-link-profile.active {
   position: relative;
   transition: color 0.6s ease;
   width: 100%;
@@ -69,90 +68,45 @@
   padding: 6px 22px;
   transform: rotateY(0deg); /* 水平翻轉效果 */
 }
-.nav-article .nav-link-home {
-  position: relative;
-  color: white;
-  padding: 6px 22px;
-  transition: transform 0.6s ease;
-  transform-style: preserve-3d; /* 保持 3D 效果 */
-  transform: rotateY(0deg); /* 水平翻轉 */
-}
-.nav-article .nav-link-profile {
-  position: relative;
-  color: white;
-  padding: 6px 22px;
-  transition: transform 0.6s ease;
-  transform-style: preserve-3d; /* 保持 3D 效果 */
-  transform: rotateY(0deg); /* 水平翻轉 */
-}
-.nav-article .nav-link-home::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: $grey-50;
-  background-color: transparent; /* 背景透明 */
-  z-index: -1;
-  transform: scaleX(0); /* 預設隐藏背景 */
-  transform-origin: center;
-  transition: transform 0.6s ease;
-  background-size: cover;
-  pointer-events: none; /* 讓背景不擋住 */
-}
-.nav-article .nav-link-profile::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: $grey-50;
-  background-color: transparent; /* 背景透明 */
-  z-index: -1;
-  transform: scaleX(0); /* 預設隐藏背景 */
-  transform-origin: center;
-  transition: transform 0.6s ease;
-  background-size: cover;
-  pointer-events: none; /* 讓背景不擋住 */
-}
-.nav-article .nav-link-home.active-home,
-.nav-article .nav-link-profile.active-profile {
-  z-index: 2;
-  pointer-events: all;  /* 可以不擋住可正常點選*/
-}
-/* 翻轉推薦文章樣式 */
-.nav-article .nav-link-home.active-home::after {
-  transform: scaleX(1); /* 顯示出背景 */
-  transform-origin: center;
-  background: url("/assets/images/sleep-health-home.png") no-repeat;
-  width: 375px;
-  height: 694px;
-  z-index: -1;
-  transition: transform 0.6s ease, opacity 0.8s ease;
-  .tab-pane-home {
-    transition: transform 0.6s ease-in-out, opacity 0.8s ease;
-  } 
-}
-
-/* 翻轉線上醫生樣式 */
-.nav-article .nav-link-profile.active-profile::after {
-  transform: scaleX(1);
-  transform-origin: center;
-  background: url("/assets/images/sleep-health-profile.png") no-repeat;
-  width: 375px;
-  height: 694px;
-  z-index: -1;
-  transition: transform 0.6s ease, opacity 0.8s ease;
-  .tab-pane-profile {
-    transition: transform 0.6s ease-in-out, opacity 0.8s ease;
+.nav {
+  &.nav-article {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $grey-50;
+      transform-origin: center;
+      transform-origin: center;
+      background: url('/assets/images/sleep-health-home.png') no-repeat;
+      width: 100%;
+      max-width: 375px;
+      height: 694px;
+      z-index: 1;
+      transition: transform 0.6s ease, opacity 0.8s ease;
+      .tab-pane-home {
+        transition: transform 0.6s ease-in-out, opacity 0.8s ease;
+      }
+    }
+    &:has(.active-home) {
+      &::after {
+        transform: rotateY(0deg); /* 水平翻轉 */
+      }
+    }
+    &:has(.active-profile) {
+      &::after {
+        transform: rotateY(180deg); /* 水平翻轉 */
+      }
+    }
   }
 }
 .profile-zindex {
   position: relative;
   z-index: 3;
 }
-
 // -----
 .article-new-seven {
-  background: url("/assets/images/article-7.png") no-repeat;
+  background: url('/assets/images/article-7.png') no-repeat;
   background-size: cover;
   background-position: center center;
   width: 192px;
@@ -163,7 +117,7 @@
   justify-content: end;
 }
 .article-new-eight {
-  background: url("/assets/images/article-8.png") no-repeat;
+  background: url('/assets/images/article-8.png') no-repeat;
   background-size: cover;
   background-position: center center;
   width: 192px;
@@ -174,7 +128,7 @@
   justify-content: end;
 }
 .article-new-nine {
-  background: url("/assets/images/article-9.png") no-repeat;
+  background: url('/assets/images/article-9.png') no-repeat;
   background-size: cover;
   background-position: center center;
   width: 192px;
@@ -185,16 +139,15 @@
   justify-content: end;
 }
 .article-new {
-  margin-left: 24px;
-  width: auto;
-  overflow: visible !important;
+  width: 100%;
+  overflow: hidden;
   .article-overflow {
+    padding-left: 24px;
     width: 100%;
     overflow-x: auto;
     scrollbar-width: none;
     .article-new-text {
       border-radius: 0px 0px 16px 16px;
-      // background: rgba(29, 26, 62, 0.4);
       backdrop-filter: blur(10px);
       padding: 10px 12px;
     }
@@ -204,6 +157,5 @@
       text-overflow: ellipsis;
       width: 180px;
     }
-    
   }
 }

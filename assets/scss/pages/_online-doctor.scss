@@ -1,7 +1,7 @@
 .date-selection {
   margin-left: 24px;
   width: auto;
-  overflow: visible !important;
+  overflow: hidden;
   margin-bottom: 12px;
   .date-overflow {
     width: 100%;
@@ -19,12 +19,12 @@
     height: 69px;
   }
   .date-item:hover {
-    background: #74A6FF;
+    background: #74a6ff;
     .date-text {
-      color:#1D1A3E;
+      color: #1d1a3e;
     }
     .date-week {
-      color:#1D1A3E;
+      color: #1d1a3e;
     }
   }
   .date-text {
@@ -45,7 +45,7 @@
   margin-left: 24px;
   margin-bottom: 24px;
   width: auto;
-  overflow: visible !important;
+  overflow: hidden;
   z-index: 3;
   .clock-overflow {
     width: 100%;
@@ -71,7 +71,7 @@
 }
 .reserve-doctor {
   height: auto;
-  overflow: visible !important;
+  overflow: hidden;
   .reserve-overflow {
     height: 411px;
     overflow-y: auto;
@@ -82,7 +82,7 @@
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.05);
     margin-bottom: 16px;
-    margin-right: 16px; 
+    margin-right: 16px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -92,45 +92,45 @@
     width: 90px;
     height: 90px;
     border-radius: 8px;
-    object-fit: cover; 
+    object-fit: cover;
     z-index: 2;
-    overflow: hidden; 
+    overflow: hidden;
   }
   .reserve-img-one {
     position: absolute;
     top: 2%;
     left: 110%;
-    width: 400%; 
-    height: 400%; 
-    transform: translate(-50%, -50%); 
-    object-fit: cover; 
+    width: 400%;
+    height: 400%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
   }
   .reserve-img-two {
     position: absolute;
     top: -2%;
     left: -90%;
-    width: 400%; 
-    height: 400%; 
-    transform: translate(-50%, -50%); 
-    object-fit: cover; 
+    width: 400%;
+    height: 400%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
   }
   .reserve-img-three {
     position: absolute;
     top: -10%;
     left: 200%;
-    width: 400%; 
-    height: 400%; 
-    transform: translate(-50%, -50%); 
-    object-fit: cover; 
+    width: 400%;
+    height: 400%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
   }
   .reserve-img-four {
     position: absolute;
     top: 180%;
     left: -35%;
-    width: 400%; 
-    height: 400%; 
+    width: 400%;
+    height: 400%;
     transform: translate(-50%, -50%);
-    object-fit: cover; 
+    object-fit: cover;
   }
   .reserve-text-item {
     padding: 9px 0px;

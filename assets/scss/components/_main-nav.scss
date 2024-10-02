@@ -17,8 +17,11 @@
 .main-nav_bar {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
   align-items: flex-end;
+  @include media-breakpoint-up(sm) {
+    gap: 24px;
+  }
 }
 .nav_bar_item {
   position: relative;
@@ -45,7 +48,10 @@
     margin-top: 8px;
   }
   &:first-child a {
-    padding: 0 16px;
+    padding: 0 8px;
+    @include media-breakpoint-up(sm) {
+      padding: 0 16px;
+    }
   }
 }
 
