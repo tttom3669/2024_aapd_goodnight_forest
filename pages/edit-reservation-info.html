@@ -229,10 +229,36 @@
   <div class="offcanvas offcanvas-success" tabindex="-1" id="offcanvasRightSuccess" aria-labelledby="offcanvasRightSuccessLabel">
     <%- include('./layout/header'); -%>
     <div class="bg-top bg-edit">
-      <div class="offcanvas-header">
+      <div class="offcanvas-header mb-8">
         <div class="bg-edit-success"></div>
+        <a href="./sleep-healthroom.html" class="close-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="m0 0h24v24h-24z" fill="none"/><path d="m18.3 5.71c-.39-.39-1.02-.39-1.41 0l-4.89 4.88-4.89-4.89c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l4.89 4.89-4.89 4.89c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0l4.89-4.89 4.89 4.89c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41l-4.89-4.89 4.89-4.89c.38-.38.38-1.02 0-1.4z" fill="#FFFFFF" stroke="#FFFFFF"/></svg>
+        </a>
       </div>
-      <div class="offcanvas-body">    
+      <div class="offcanvas-body container">
+        <div class="h-100 d-flex flex-column  align-items-center">
+          <div class="success-check-bg mb-4"></div>
+          <p class="fs-4 lh-sm fw-bold text-white mb-6">預約成功</p>
+          <div class="mx-6">
+            <ul>
+              <li class="success-check-time">
+                <p class="check-time-year">2024</p>
+                <p class="check-time-date mb-2">
+                  07.23
+                  <span class="check-time-week">(二)</span>
+                </p>
+                <div class="clock-line"></div>
+                <p class="check-time-clock">11:30 - 12:00</p>
+              </li>
+              <li class="join-line mb-6">
+                <p class="mb-4 join-line-text">加入LINE群組以便於安排線上診療</p>
+                <button type="button" class="join-line-btn">加入LINE群組</button>
+              </li>
+            </ul>
+          </div>
+          <a href="./sleep-healthroom.html" class="fw-bold lh-sm fz-sm text-grey-100 d-block">取消預約</a>
+        </div>
+
       </div>
     </div>
     <%- include('./layout/footer'); -%>
