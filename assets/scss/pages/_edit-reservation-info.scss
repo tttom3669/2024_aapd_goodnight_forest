@@ -232,8 +232,6 @@
   background: transparent;
   background-color: transparent;
   border: transparent;
-  padding: 0;
-  margin: 0;
 }
 .offcanvas-success {
   width: 100vw; 
@@ -242,10 +240,6 @@
   left: 0;       
   right: 0;      
   bottom: 0;
-  padding: 0;
-  margin: 0;
-}
-.edit-body {
   padding: 0;
   margin: 0;
 }
@@ -275,9 +269,7 @@
 .data-confirm-bottom {
   border-radius: 0px 0px 16px 16px;
 }
-.bg-edit {
-  position: relative;
-}
+// 預約成功畫面
 .bg-edit-success {
   height: 283px;
   background-image:  
@@ -295,11 +287,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 0;
-}
-.close-icon {
-  z-index: 1;
-  position: relative;
 }
 .success-check-bg {
   background: url('/assets/images/success-bg.png');
@@ -308,14 +295,10 @@
   background-size: cover;
   width: 142px;
   height: 84px;
-  position: relative;
-  z-index: 1;
 }
 .success-check-time {
   border: 0.5px solid rgba(29, 26, 62, 1);
   padding: 24px 61px;
-  z-index: 1;
-  position: relative;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px 16px 0px 0px;
   .check-time-year {
@@ -352,8 +335,6 @@
 .join-line {
   border: 0.5px solid rgba(29, 26, 62, 1);
   padding: 24px 48px;
-  z-index: 1;
-  position: relative;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0px 0px 16px 16px;
   .join-line-text {
