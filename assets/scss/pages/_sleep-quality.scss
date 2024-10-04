@@ -1,0 +1,24 @@
+.quality-title {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.quality-low-line {
+  width: 4px;
+  border-radius: 4px;
+  background: $success-1;
+}
+.quality-medium-line {
+  width: 4px;
+  border-radius: 4px;
+  background: $warning-1;
+}
+.quality-dangerLight-line {
+  width: 4px;
+  border-radius: 4px;
+  background: $danger-2;
+}
+.quality-high-line {
+  width: 4px;
+  border-radius: 4px;
+  background: $danger-1;
+}
