@@ -9,11 +9,6 @@
 - 貝拉
 - 七卡 (berrymoth)
 
-## UI 設計團隊
-
-- 貝拉
-- 七卡 (berrymoth)
-
 ## 前端開發團隊
 
 - Johnson
