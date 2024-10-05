@@ -1,0 +1,356 @@
+.edit-doctor {
+  display: flex;
+  align-items: center;
+  .edit-doctor-img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover; 
+    z-index: 2;
+    overflow: hidden; 
+  }
+  .doctor-img {
+    position: absolute;
+    top: 2%;
+    left: 110%;
+    width: 400%; 
+    height: 400%; 
+    transform: translate(-50%, -50%); 
+    object-fit: cover; 
+  }
+  .edit-text-item {
+    padding: 9px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .edit-evaluate {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .edit-tag-bg {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 24px;
+    padding: 4px 12px;
+    color: $white;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+  }
+}
+.mb-29 {
+  margin-bottom: 29px;
+}
+.mb-79 {
+  margin-bottom: 79px;
+}
+.edit-input {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  color: $white;
+}
+.edit-input::placeholder {
+  color: rgba(187, 186, 197, 1);
+}
+.check-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid $primary-light;
+  color: $white;
+}
+.check-input:checked {
+  background: $primary;
+  position: relative;
+  border: transparent;
+}
+.check-input:checked::before {
+  content:"";
+  background: $white;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.birthday-date-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid $grey-100;
+  border-radius: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.birthday-date-item .birthday-date-input {
+  flex-grow: 1;
+  border-color: transparent;
+  outline: transparent;
+  background-color: transparent;
+  color: $white;
+}
+.birthday-date-input, .birthday-date-input:focus {
+  background-color: transparent;
+  color: #C1C1C1;
+  
+}
+.datepicker-cell:not(.disabled):hover {
+  background-color: #e8e8e8;
+}
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #e8e8e8;
+  color: #000;
+}
+.birthday-date-input::placeholder {
+  color: rgba(187, 186, 197, 1);
+}
+.birthday-date-input-icon {
+  margin-right: 18px;
+}
+.reason-input {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 122px;
+  color: $white;
+}
+.reason-input::placeholder {
+  color: rgba(187, 186, 197, 1);
+}
+.agree-check-input {
+  appearance: none; 
+  width: 20px; 
+  height: 20px; 
+  border-radius: 6px; 
+  background-color: rgba(255, 255, 255, 0.3); 
+  position: relative;
+  border: 1px solid rgba(241, 246, 255, 1);
+  color: $white;
+}
+.agree-check-input:checked {
+  background-color: $primary; 
+}
+.agree-check-input:checked::before {
+  content: ''; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: $primary;  
+  border-radius: 6px; 
+}
+.agree-check-input:checked::after {
+  content: ''; 
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 9px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.privacy-item {
+  border-radius: 16px;
+  background: $white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 13px;
+  padding-right: 7px;
+}
+.privacy-check-input {
+  appearance: none; 
+  width: 24px; 
+  height: 24px; 
+  background-color: $white;
+  position: relative;
+  border: 1px solid rgba(193, 193, 193, 1);
+  margin-right: 13px;
+  color: $white;
+}
+.privacy-check-input:checked {
+  background-color: $primary; 
+}
+.privacy-check-input:checked::before {
+  content: ''; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  background-color: $primary;  
+  border-radius: 6px; 
+}
+.privacy-check-input:checked::after {
+  content: ''; 
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 9px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.privacy-label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: rgba(75, 75, 75, 1);
+}
+.btn-next {
+  width: 100%;
+  border-radius: 40px;
+  padding: 12px 0px;
+  color: $darkBlue-1;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.btn-confirm {
+  background: transparent;
+  background-color: transparent;
+  border: transparent;
+}
+.offcanvas-success {
+  width: 100vw; 
+  height: 100%;
+  top: 0;        
+  left: 0;       
+  right: 0;      
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+.data-confirm-item {
+  padding: 11px 16px;
+  border: 0.5px solid $darkBlue-1;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  .data-confirm-title {
+    font-size: 14px;
+    line-height: 17.5px;
+    font-weight: 500;
+    color: $white;
+    width: 100px;
+  }
+  .data-confirm-text {
+    font-size: 14px;
+    line-height: 17.5px;
+    font-weight: 500;
+    color: $grey-50;
+  }
+}
+.data-confirm-top {
+  border-radius: 16px 16px 0px 0px;
+}
+.data-confirm-bottom {
+  border-radius: 0px 0px 16px 16px;
+}
+// 預約成功畫面
+.bg-edit-success {
+  height: 283px;
+  background-image:  
+  linear-gradient(
+    to top,
+    rgba(29, 26, 62, 1),
+    rgba(29, 26, 62, 0.41),
+    rgba(29, 26, 62, 0.13),
+    rgba(29, 26, 62, 0)
+  ),
+  url('/assets/images/bg-health.png');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.success-check-bg {
+  background: url('/assets/images/success-bg.png');
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-size: cover;
+  width: 142px;
+  height: 84px;
+}
+.success-check-time {
+  border: 0.5px solid rgba(29, 26, 62, 1);
+  padding: 24px 61px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px 16px 0px 0px;
+  .check-time-year {
+    font-size: 17.28px;
+    line-height: 24.2px;
+    font-weight: 400;
+    color: $grey-100;
+  }
+  .check-time-date {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    color: $white;
+  }
+  .check-time-week {
+    font-size: 23.05px;
+    line-height: 23.81px;
+    font-weight: 500;
+    color: $white;
+  }
+  .clock-line {
+    margin-bottom: 2px;
+    width: 157px;
+    height: 1.44px;
+    background: rgba(97, 95, 120, 1);
+  }
+  .check-time-clock {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $white;
+  }
+}
+.join-line {
+  border: 0.5px solid rgba(29, 26, 62, 1);
+  padding: 24px 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px 0px 16px 16px;
+  .join-line-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey-100;
+  }
+  .join-line-btn {
+    border: 0px;
+    border-radius: 40px;
+    width: 100%;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: rgba(58, 206, 1, 1);
+  }
+}

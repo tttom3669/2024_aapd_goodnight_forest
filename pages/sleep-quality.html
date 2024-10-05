@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>睡眠品質</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+  <section class="bg-top">
+    <div class="container py-3">
+      <div class="d-flex bd-highlight align-items-center justify-content-center">
+        <a href="./sleep-report.html" class="flex-shrink-1 bd-highlight">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M31 36L19 24L31 12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="w-100 bd-highlight d-flex justify-content-center">
+          <h2 class="text-white fw-bold fs-base lh-sm">睡眠品質</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-bottom">
+    <div class="container pt-3">
+      <div class="py-3 px-3 mb-4 quality-title">
+        <p class="fw-bold fs-sm lh-sm text-white mb-3">睡眠品質</p>
+        <p class="fw-light fs-xs lh-base text-grey-100">本APP的睡眠報告數據源於手機麥克風錄製到的聲音、Apple watch 測量睡眠狀況。</p>
+        <p class="fw-light fs-xs lh-base text-grey-100">透過這些裝置收集您的運動、心率和聲音數據，然後利用智能驗算法進行分析，以提供詳細的睡眠報告。</p>
+        <p class="fw-light fs-xs lh-base text-grey-100">這些報告幫助您了解每晚的睡眠質量和模式，讓您能更好地調整和改善睡眠。</p>
+      </div>
+      <div class="py-3 px-3 mb-4 quality-title">
+        <p class="fw-bold fs-sm lh-sm text-white mb-3">睡眠品質</p>
+        <ul>
+          <li class="d-flex mb-6">
+            <div class="quality-low-line me-3"></div>
+            <div>
+              <div class="d-flex align-items-center ">
+                <span class="me-2 mb-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none">
+                    <path
+                      d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z"
+                      fill="none" stroke="#34c597" stroke-width="4" stroke-linejoin="round" />
+                    <path d="M24 35C29 35 31 31 31 31H17C17 31 19 35 24 35Z" stroke="#34c597" stroke-width="4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M31 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17 20V21" stroke="#34c597" stroke-width="4" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="fs-sm lh-sm fw-bold text-success-1">綠色</span>
+              </div>
+              <p class="fw-light lh-base fs-xs text-grey-100">低風險，狀況良好。建議保持現有的健康習慣。</p>
+              <p class="fw-light lh-base fs-xs text-grey-100">大約80-100%的用戶數據在這範圍內。</p>
+            </div>
+          </li>
+          <li class="d-flex mb-6">
+            <div class="quality-medium-line me-3"></div>
+            <div>
+              <div class="d-flex align-items-center">
+                <span class="me-2 mb-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#fdda43" stroke-width="4" stroke-linejoin="round"/><path d="M31 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 18V19" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 31C31 31 29 35 24 35C19 35 17 31 17 31" stroke="#fdda43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="fs-sm lh-sm fw-bold text-warning-1">黃色</span>
+              </div>
+              <p class="fw-light lh-base fs-xs text-grey-100">中等風險，需注意。建議監測並調整生活習慣。</p>
+              <p class="fw-light lh-base fs-xs text-grey-100">大約60-79%的用戶數據在這範圍內。</p>
+            </div>
+          </li>
+          <li class="d-flex mb-6">
+            <div class="quality-dangerLight-line me-3"></div>
+            <div>
+              <div class="d-flex align-items-center ">
+                <span class="me-2 mb-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#ffd9d8" stroke-width="4" stroke-linejoin="round"/><path d="M24 29C29 29 31 33 31 33H17C17 33 19 29 24 29Z" stroke="#ffd9d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M31 20V21" stroke="#ffd9d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 20V21" stroke="#ffd9d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="fs-sm lh-sm fw-bold text-danger-2">粉色</span>
+              </div>
+              <p class="fw-light lh-base fs-xs text-grey-100">中高風險，需關注。建議觀察並諮詢醫療人員。</p>
+              <p class="fw-light lh-base fs-xs text-grey-100">大約30-59%的用戶數據在這範圍內。</p>
+            </div>
+          </li>
+          <li class="d-flex">
+            <div class="quality-high-line me-3"></div>
+            <div>
+              <div class="d-flex align-items-center ">
+                <span class="me-2 mb-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="none" stroke="#fd615b" stroke-width="4" stroke-linejoin="round"/><path d="M31 35C31 35 29 31 24 31C19 31 17 35 17 35" stroke="#fd615b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 18L28 17" stroke="#fd615b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M33 18V27" stroke="#fd615b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 17L13 18" stroke="#fd615b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 18V27" stroke="#fd615b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="fs-sm lh-sm fw-bold text-danger-1">紅色</span>
+              </div>
+              <p class="fw-light lh-base fs-xs text-grey-100">高風險，需立即關注。建議尋求專業醫療意見。</p>
+              <p class="fw-light lh-base fs-xs text-grey-100">大約1-29%的用戶數據在這範圍內。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="py-3 px-3 mb-4 quality-title">
+        <p class="fw-bold fs-sm lh-sm text-white mb-3">請注意 ! 不應將此視為或解釋為醫療建議</p>
+        <p class="fw-light fs-xs lh-base text-grey-100">本睡眠追蹤APP旨在幫助用戶了解其睡眠模式並提供相關建議。</p>
+        <p class="fw-light fs-xs lh-base text-grey-100">然而，本APP所提供的信息僅供參考，不應被視為或解釋醫療建議。</p>
+        <p class="fw-light fs-xs lh-base text-grey-100">本APP並非醫療器械，且不替代專業醫療診斷、治療或建議。若您有任何健康問題或持續的睡眠障礙，請務必諮詢專業醫療人員或醫生。</p>
+        <p class="fw-light fs-xs lh-base text-grey-100">
+          根據個人情況，專業醫療人員能提供更準確和個性化的建議。
+        </p>
+        <p class="fw-light fs-xs lh-base text-grey-100">
+          本APP對於任何因依賴其提供的信息而引起的健康問題或損害不承擔責任。
+        </p>
+      </div>
+    </div>
+  </section>
+  <%- include('./layout/footer'); -%>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>
